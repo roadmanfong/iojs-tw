@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[iojs 台灣]]></title>
+  
+  <link href="//atom.xml" rel="self"/>
+  <link href="http://tw.iojs.org/"/>
+  <updated>2015-05-13T22:57:58.680Z</updated>
+  <id>http://tw.iojs.org/</id>
+  
+  <author>
+    <name><![CDATA[iojs 台灣]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[打造一個更好的 Node 社群]]></title>
+    <link href="http://tw.iojs.org/2015/05/05/building-a-better-node-community/"/>
+    <id>http://tw.iojs.org/2015/05/05/building-a-better-node-community/</id>
+    <published>2015-05-05T00:45:52.000Z</published>
+    <updated>2015-05-13T22:57:58.680Z</updated>
+    <content type="html"><![CDATA[<p><img src="https://d262ilb51hltx0.cloudfront.net/max/1000/1*bupWLg7JyqowFbDYltlXFQ.jpeg" alt=""></p>
+<p>在早些日子，事情是比較簡單的。很少人依賴 Node，也很少人使用它，甚至更少人用 Node 來工作。</p>
+<p>當發生一個大問題時，我們六個人就會提出來討論。這個團隊沒什麼優點，就只是大家在一起討論而已。它既不民主，也不開源。而且顯而易見的，團隊不會持續著很久。我想稱呼他為「Node Illuminati」。我堅持。</p>
+<p>我們討論出了早期的 Buffers 和 Streams，並且持續進行了幾個月。這個核心團隊變得更國際化了。「Node Illuminati」並沒有跟著擴充。</p>
+<p>我去參加了一個論壇，接著我們發現到 Node 變得越來越龐大。接著我去了另外一個更接近「Illuminati」的論壇，當然這個論壇遠遠超過六個人。我們再次想通了 Streams，至少我們這樣認為。</p>
+<p>一年過去了。我又去了另外一個論壇。我們發現到 Node 已經相當龐大了。在 Node core 的工作對比於模組，真是黯然失色。我嘗試在其他的論壇談一些 Node core 的東西，但是還是失敗了。但我遇到了 Raquel，而且 Chris 說服她用 Node 來做機器人，所以我想這也算是一次成功了吧。</p>
+<p>我們認為模組已經足夠小到讓一個人來運作。模組後來又變得更小了，小到一個人可以寫幾百個模組，這遠遠超過他們所能維護的範圍。</p>
+<p>我加入了幾個貢獻者到<a href="https://github.com/request/request" target="_blank" rel="external">request</a>專案裡面，他們做了一些相當好的貢獻。但後來他們就消失不見了，所以我接著做了大部分的工作。</p>
+<p>Rod 發現了更好的方式來管理專案。Git 在”移除”工作上做得相當好。要知道，讓人們對專案作出貢獻是很難的，但當你給了他們專案的管理權後，他們會出更多的貢獻。即使有人搞雜了一些東西，Git 在後續處理上相當容易。</p>
+<p>我把所有對專案有貢獻的人變成協作者。我並沒有把這樣的內容寫下來成為一個政策。我並沒有針對自己的內容送 pull request。我做出這些決定並沒有蒐集或尋求誰的回饋。我加入更多對專案有貢獻的人成為協作者。然後，他們又消失了。我繼續接著做了大部分的工作。</p>
+<p>當你不寫文件時，你靠的是文化的規範。當你的文化都很像，也就意味著你沒有辦法吸引不在這個文化內的人們。當你在掌控這些事情的時候，即使你說你不是獨裁者，但也很難說服人了。人們都不喜歡獨裁的人，他們會傾向離開或反抗。</p>
+<p>於是我寫下了貢獻的政策。我把自己的內容送了 pull request。我開始向其他的貢獻者尋求回饋。令人驚喜的事情發生了，不管是已經加入或是新加入的人都有更多的貢獻。他們貢獻更多，也持續關注在這個專案上。</p>
+<p>Substack 寫了教學手冊。Rod 和 Tim 很喜歡這份手冊，所以他們用相同的格式寫了更多的教學手冊。Max 和 Brian 把所有的教學手冊放到網站上，並且建立了一個 repository 讓需要的人們可以隨時取得。這個專案叫做 NodeSchool，一直持續到現在。</p>
+<p>我詢問有沒有人想要舉行在地化的 NodeSchool 活動，並且分享他們從參與者身上學到的東西。這些活動比我參加過的任何活動成長的都快，但終究遇到了瓶頸。</p>
+<p>Max 和 Jessica 寫下了 NodeSchool 的<a href="http://nodeschool.io/about.html" target="_blank" rel="external">理念</a>、<a href="http://nodeschool.io/building-workshops.html" target="_blank" rel="external">如何舉辦一個新的 workshop</a>和 <a href="https://github.com/nodeschool/organizers/blob/master/README.md#how-to-start-a-new-nodeschool-chapter" target="_blank" rel="external">如何舉辦更多的活動</a>。我們讓每一個活動的籌辦者變成 <a href="https://github.com/nodeschool" target="_blank" rel="external">NodeSchool</a> 的共同擁有者。我們讓<a href="https://github.com/nodeschool/organizers/blob/master/README.md#3" target="_blank" rel="external">每個參加活動的參與者變成活動的所有人</a>。<a href="http://nodeschool.io/chapters.html" target="_blank" rel="external">NodeSchool 再一次成長</a>。</p>
+<p>人們可以做的事情並不如理論上的廣範與開闊。人們是可以把事情做好的，當你把事情清楚且明確的告訴他們可以做什麼，會有更多人投入。他們不會像你一樣，當所有沒有被寫下來的假設，都會變成一種阻礙。當人們跟你越不一樣，這些阻礙會變得越來越多，然後當這些人們跟你的出生背景不一樣，或是跟你不在一個社會階級時，阻礙就會越來越多。</p>
+<p>人們喜歡做他們屬於自己的工作，而這樣的所有權是可以被分享的。同樣的需要有責任感。如果你放棄自己的專屬所有權，如果你把事情寫下來，如果你明確的告訴大家該如何參與，你會成長的，同時，你的工作會比你自己擁有一切變得更佳美好。</p>
+<p>原文：<a href="https://medium.com/node-js-javascript/building-a-better-node-community-3f8f45b45cb5" target="_blank" rel="external">Building a Better Node Community.</a>，作者：<a href="https://medium.com/@iojs" target="_blank" rel="external">@iojs</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="https://d262ilb51hltx0.cloudfront.net/max/1000/1*bupWLg7JyqowFbDYltlXFQ.jpeg" alt=""></p>
+<p>在早些日子，事情是比較簡單的。很少人依賴 Node，也很少人使用它，]]>
+    </summary>
+    
+      <category term="iojs 文章" scheme="http://tw.iojs.org/categories/iojs-%E6%96%87%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[npm 週報 #14]]></title>
+    <link href="http://tw.iojs.org/2015/04/30/npm-weekly-14/"/>
+    <id>http://tw.iojs.org/2015/04/30/npm-weekly-14/</id>
+    <published>2015-04-30T14:40:45.000Z</published>
+    <updated>2015-05-13T22:57:58.680Z</updated>
+    <content type="html"><![CDATA[<h2 id="Cordova_套件轉移到_npm">Cordova 套件轉移到 npm</h2><p><img src="http://36.media.tumblr.com/2d401fa2e2e47128436526ca89754ace/tumblr_inline_nnl6v1YPDr1t68bpr_400.png" alt=""></p>
+<p>現在有許多框架持續將套件轉移到 npm 的趨勢，Apache Cordova 宣布將其核心套件轉移到 npm，也鼓勵插件開發者這麼做。假如您是 Cordova 開發者，請直接閱讀<a href="http://cordova.apache.org/announcements/2015/04/21/plugins-release-and-move-to-npm.html" target="_blank" rel="external">開發指南</a>。</p>
+<h2 id="CLI_消息">CLI 消息</h2><p>npm@next 這周帶來了 2.9.0 版本，此更新有兩個小修正，當您使用 <code>npm outdated</code> 或 <code>npm update</code> 指令更動本地端套件時，版本前面的前置名稱現在可以透過 npm 來設定了。</p>
+<h2 id="部署_github_頁面">部署 github 頁面</h2><p>您還在維護個人 Github 網站嗎？您可以透過 <a href="https://docs.npmjs.com/cli/run-script" target="_blank" rel="external">npm run scripts</a> 指令讓部署過程更順暢。Jessica Lord 寫了一個<a href="https://github.com/jlord/git-it/blob/master/package.json#L14-L17" target="_blank" rel="external">簡單範例</a>在 git-it 套件內。</p>
+<p>原文：<a href="http://blog.npmjs.org/post/117716297055/npm-weekly-14" target="_blank" rel="external">npm Weekly, #14</a>，作者：<a href="http://blog.npmjs.org/" target="_blank" rel="external">@npm</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="Cordova_套件轉移到_npm">Cordova 套件轉移到 npm</h2><p><img src="http://36.media.tumblr.com/2d401fa2e2e47128436526ca89754ace/tumblr_inline_nnl6]]>
+    </summary>
+    
+      <category term="npm 週報" scheme="http://tw.iojs.org/categories/npm-%E9%80%B1%E5%A0%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[npm 週報 #13]]></title>
+    <link href="http://tw.iojs.org/2015/04/30/npm-weekly-13/"/>
+    <id>http://tw.iojs.org/2015/04/30/npm-weekly-13/</id>
+    <published>2015-04-30T08:56:21.000Z</published>
+    <updated>2015-05-13T22:57:58.680Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://41.media.tumblr.com/0afec5f54b41321b2b715dbfaf0a8480/tumblr_inline_nn6fwgtoPi1t68bpr_500.png" alt=""></p>
+<h2 id="解決_npm_的困難問題:_套件命名">解決 npm 的困難問題: 套件命名</h2><p>隨著上週推出的私有模組，我們在此介紹一個新的功能：套件領域。如果你是 npm 註冊用戶，那你已經有一個屬於你的領域，如果你想知道如何使用它， 請參閱<a href="http://blog.npmjs.org/post/116936804365/solving-npms-hard-problem-naming-packages" target="_blank" rel="external">這篇</a>說明。</p>
+<h2 id="npm_在紐約">npm 在紐約</h2><p>幾位 npm 的成員將在下週出現在紐約，歡迎來打聲招呼。<a href="https://twitter.com/linclark" target="_blank" rel="external">Lin</a> 將會參加 <a href="http://empirejs.org/" target="_blank" rel="external">EmpireJS</a> (April 26-27) 以及會在 <a href="http://nodeday.com/" target="_blank" rel="external">NodeDay</a> (April 28) 有個演講，<a href="https://twitter.com/izs" target="_blank" rel="external">Isaac</a> 也會參加。 如果你想在 NodeDay 上聊聊，這邊還有一些<a href="https://ti.to/node-day-2015/node-day-new-york/with/udwwbu3-n9q" target="_blank" rel="external">門票</a>。</p>
+<h2 id="社群消息">社群消息</h2><p>Piggybank 寫了一篇如何在 Heroku 上使用 npm 私有模組的教學。即便你沒有使用 Heroku，你或許可以參考第四步驟，建立專案的 .npmrc。這適用於任何持續整合系統。</p>
+<h2 id="CLI_消息">CLI 消息</h2><p>上週我們有一個錯誤修正，讓 npm 對於 git 的支援更加穩定。另外也感謝 <a href="https://twitter.com/sammikes" target="_blank" rel="external">Sam Mikes</a>指出 CouchDB 與新版 Node/io.js 的問題。</p>
+<p>原文：<a href="http://blog.npmjs.org/post/117031297945/npm-weekly-13" target="_blank" rel="external">npm Weekly, #13</a>，作者：<a href="http://blog.npmjs.org/" target="_blank" rel="external">@npm</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://41.media.tumblr.com/0afec5f54b41321b2b715dbfaf0a8480/tumblr_inline_nn6fwgtoPi1t68bpr_500.png" alt=""></p>
+<h2 id="解決_npm]]>
+    </summary>
+    
+      <category term="npm 週報" scheme="http://tw.iojs.org/categories/npm-%E9%80%B1%E5%A0%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[npm 週報 #12]]></title>
+    <link href="http://tw.iojs.org/2015/04/18/npm-weekly-12/"/>
+    <id>http://tw.iojs.org/2015/04/18/npm-weekly-12/</id>
+    <published>2015-04-18T01:24:32.000Z</published>
+    <updated>2015-05-13T22:57:58.680Z</updated>
+    <content type="html"><![CDATA[<h2 id="npm_週報_#12">npm 週報 #12</h2><p><img src="https://40.media.tumblr.com/26d4e04a7715c15871155307637f9201/tumblr_inline_nmt1v12YZY1t68bpr_500.png" alt=""><br>今天開始就可以使用<a href="https://www.npmjs.com/private-modules" target="_blank" rel="external">私有模組</a>。</p>
+<h2 id="升級到_npm@next">升級到 npm@next</h2><p>npm@2.8.1 有幾個變更能夠更簡單地使用私有模組。如果你已經註冊了 npm 私有模組，馬上用 <code>sudo npm install -g npm@next</code> 升級到 npm@next吧。 </p>
+<h2 id="npm_的_git_集成功能運作正常">npm 的 git 集成功能運作正常</h2><p>使用 git 依賴套件上的問題已經存在一陣子了，但是在週末釋出的 npm@2.8.1，我想我們已經做了大量的改進。如果你有使用這個功能，可以去試試看並讓我們知道！</p>
+<p>原文：<a href="http://blog.npmjs.org/post/116391174580/npm-weekly-12" target="_blank" rel="external">npm Weekly, #12</a>，作者：<a href="http://blog.npmjs.org/" target="_blank" rel="external">@npm</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="npm_週報_#12">npm 週報 #12</h2><p><img src="https://40.media.tumblr.com/26d4e04a7715c15871155307637f9201/tumblr_inline_nmt1v12YZY1t68bpr]]>
+    </summary>
+    
+      <category term="npm 週報" scheme="http://tw.iojs.org/categories/npm-%E9%80%B1%E5%A0%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[io.js 週報 2015.04.10]]></title>
+    <link href="http://tw.iojs.org/2015/04/15/weekly-update-april-10th/"/>
+    <id>http://tw.iojs.org/2015/04/15/weekly-update-april-10th/</id>
+    <published>2015-04-15T08:47:01.000Z</published>
+    <updated>2015-05-13T22:57:58.680Z</updated>
+    <content type="html"><![CDATA[<h2 id="io-js_1-6-4_release">io.js 1.6.4 release</h2><p>這週我們有一個 io.js 釋出版本 <a href="https://iojs.org/dist/v1.6.4/" target="_blank" rel="external">v1.6.4</a>，完整的更新項目可以在 <a href="https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md" target="_blank" rel="external">GitHub</a> 上找到。</p>
+<h3 id="主要更新">主要更新</h3><ul>
+<li><strong>npm:</strong> npm 升級到 2.7.5，細節可以參閱 <a href="https://github.com/npm/npm/blob/master/CHANGELOG.md#v275-2015-03-26" target="_blank" rel="external">npm CHANGELOG.md</a>。這個版本包含了兩個重要的安全性更新。</li>
+<li><strong>openssl:</strong> OpenSSL 1.0.2a <a href="https://github.com/iojs/io.js/pull/1325" target="_blank" rel="external">#1325</a> (Shigeki Ohtsu) 前期準備工作已經完成。更多細節可以參考 <a href="https://github.com/iojs/io.js/issues/589" target="_blank" rel="external">#589</a>。</li>
+<li><strong>timers:</strong> 未被參考 timers 所造成記憶體洩漏的問題已經被修復，包含一些 timers 相關的問題 <a href="https://github.com/iojs/io.js/pull/1330" target="_blank" rel="external">#1330</a> (Fedor Indutny)。這些修復了在 <a href="https://github.com/iojs/io.js/issues/1075" target="_blank" rel="external">#1075</a> 回報的問題。</li>
+<li><strong>android:</strong> 現在已經可以編譯讓 Android 以及相關設備使用的 io.js 版本 <a href="https://github.com/iojs/io.js/pull/1307" target="_blank" rel="external">#1307</a> (Giovanny Andres Gongora Granada)。</li>
+</ul>
+<h3 id="已知問題">已知問題</h3><ul>
+<li>在 beforeExit 執行未參考的 timer 仍存在一些問題需要解決 <a href="https://github.com/iojs/io.js/issues/1264" target="_blank" rel="external">#1264</a>。</li>
+<li>REPL 的代理配對會導致終端凍結 <a href="https://github.com/iojs/io.js/issues/690" target="_blank" rel="external">#690</a>。</li>
+<li>io.js 不可能編譯成靜態函式庫 <a href="https://github.com/iojs/io.js/issues/686" target="_blank" rel="external">#686</a>。</li>
+<li>process.send() 如同文件所建議並非同步，在 1.0.2 版新增了回歸，請見 <a href="https://github.com/iojs/io.js/issues/760" target="_blank" rel="external">#760</a> 及修改 <a href="https://github.com/iojs/io.js/issues/774" target="_blank" rel="external">#774</a>。</li>
+<li>當某個DNS查詢正在處理中，呼叫 dns.setServers() 會導致程序崩潰在某個失敗的斷言 <a href="https://github.com/iojs/io.js/issues/894" target="_blank" rel="external">#894</a>。</li>
+</ul>
+<h3 id="社群更新">社群更新</h3><ul>
+<li>Node 基金會的開發策略草案在<a href="https://github.com/jasnell/dev-policy" target="_blank" rel="external">這邊</a>。</li>
+<li>io.js <a href="https://twitter.com/rvagg/status/586050873349939201" target="_blank" rel="external">支援</a> ARMv8 / ARM64 平台。</li>
+<li>持續著 <a href="https://github.com/jasnell/dev-policy" target="_blank" rel="external">node.js/io.js</a> 新開發方針的工作。</li>
+<li><a href="https://www.youtube.com/watch?v=OjlK8k10oyo" target="_blank" rel="external">星期三</a>的 TC 會議。</li>
+</ul>
+<h3 id="即將舉行的活動">即將舉行的活動</h3><ul>
+<li><a href="http://jsconf.uy/" target="_blank" rel="external">JSConf 烏拉圭</a>的門票已經開賣，時間是 4/24~4/25 於烏拉圭蒙特維多。</li>
+<li><a href="http://nodeconf.com/" target="_blank" rel="external">NodeConf Adventure</a> 則是 6/11-14 於加州沃克溪農場。</li>
+<li><a href="http://2015.cascadiajs.com/" target="_blank" rel="external">CascadiaJS</a> 門票開賣，時間是 7/8~7/10 於華盛頓州。</li>
+<li><a href="http://nodeconf.eu/" target="_blank" rel="external">NodeConf EU</a> 門票開賣，時間是 9/6~9/9 於愛爾蘭瓦特福。</li>
+<li><a href="http://nodejs.connpass.com/event/13182/" target="_blank" rel="external">nodeSchool 東京</a> 將會在 4/12 於日本東京舉辦。</li>
+</ul>
+<p>原文：<a href="https://medium.com/node-js-javascript/io-js-week-of-april-10th-cbf6cf32409" target="_blank" rel="external">io.js Week of April 10th</a>，作者：<a href="https://medium.com/@iojs" target="_blank" rel="external">@iojs</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="io-js_1-6-4_release">io.js 1.6.4 release</h2><p>這週我們有一個 io.js 釋出版本 <a href="https://iojs.org/dist/v1.6.4/" target="_blank" rel="exte]]>
+    </summary>
+    
+      <category term="iojs 週報" scheme="http://tw.iojs.org/categories/iojs-%E9%80%B1%E5%A0%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[npm 週報 2015-04-07]]></title>
+    <link href="http://tw.iojs.org/2015/04/12/npm-weekly-11/"/>
+    <id>http://tw.iojs.org/2015/04/12/npm-weekly-11/</id>
+    <published>2015-04-12T00:02:31.000Z</published>
+    <updated>2015-05-13T22:57:58.680Z</updated>
+    <content type="html"><![CDATA[<h2 id="npm_語意化版本計算器">npm 語意化版本計算器</h2><p><img src="http://media.tumblr.com/3c341c47942a1def4657213a1cc18c04/tumblr_inline_nmg7tmIMAR1t68bpr_500.gif" alt=""></p>
+<p>弄清楚語意化版本的範圍是一件難事…所以我們做了這個<a href="(http://semver.npmjs.com/">計算器</a>)來幫忙。</p>
+<h2 id="CLI_有什麼新功能？">CLI 有什麼新功能？</h2><p>上週又我們另一個專注於臭蟲修復的一週。你可以在<a href="https://github.com/npm/npm/wiki/Roadmap#othiym23--forrest-l-norvell-twitter-othiym23" target="_blank" rel="external">路徑圖</a>中查看這週將優先處理的項目。</p>
+<h2 id="Page_rank_for_npm">Page rank for npm</h2><p><img src="https://36.media.tumblr.com/873971c4d5912ec920b5004e55a14bbd/tumblr_inline_nmg7u4hMK31t68bpr_500.png" alt=""></p>
+<p><a href="https://twitter.com/anvaka" target="_blank" rel="external">Andrei Kashcha</a> 製作了一個視覺化的 <a href="(http://anvaka.github.io/allnpmviz3d">npm 宇宙</a>)，另一個有趣地運用 npm 的資料，運用網頁排名來幫助你<a href="http://anvaka.github.io/npmrank/online" target="_blank" rel="external">尋找 npm 上的套件</a>。</p>
+<h2 id="社群消息">社群消息</h2><p>如果你是在團隊合作內，透過全域模組建立每位成員的開發環境，對於建立一個專案而言這將會個麻煩。不這麼做將是個好選擇。Joe Zimmerman 解釋如何透過 npm run scripts <a href="http://www.joezimjs.com/javascript/no-more-global-npm-packages/" target="_blank" rel="external">建立</a>開發依賴的套件。</p>
+<p>原文：<a href="http://blog.npmjs.org/post/115777167035/npm-weekly-11" target="_blank" rel="external">npm Weekly, #10</a>，作者：<a href="http://blog.npmjs.org/" target="_blank" rel="external">@npm</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="npm_語意化版本計算器">npm 語意化版本計算器</h2><p><img src="http://media.tumblr.com/3c341c47942a1def4657213a1cc18c04/tumblr_inline_nmg7tmIMAR1t68bpr]]>
+    </summary>
+    
+      <category term="npm 週報" scheme="http://tw.iojs.org/categories/npm-%E9%80%B1%E5%A0%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[io.js 週報 2015.04.03]]></title>
+    <link href="http://tw.iojs.org/2015/04/06/weekly-update-april-3rd/"/>
+    <id>http://tw.iojs.org/2015/04/06/weekly-update-april-3rd/</id>
+    <published>2015-04-06T23:49:54.000Z</published>
+    <updated>2015-05-13T22:57:58.680Z</updated>
+    <content type="html"><![CDATA[<h2 id="v1-6-3_釋出">v1.6.3 釋出</h2><p>這週我們有一個新版本釋出 <a href="https://iojs.org/dist/v1.6.3/" target="_blank" rel="external">v1.6.3</a>，完整的更新日誌可以在 <a href="https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md" target="_blank" rel="external">Github</a> 找到。</p>
+<h2 id="值得注意的更動">值得注意的更動</h2><ul>
+<li><strong>fs:</strong> 某些情況下，<code>fs.writeFileSync()</code>、<code>fs.writeFile()</code> 的附加模式以及 <code>fs.writeFileSync()</code> 會造成損毀，問題被回報在 <a href="https://github.com/iojs/io.js/issues/1058" target="_blank" rel="external">#1058</a>，修正在 <a href="https://github.com/iojs/io.js/pull/1063" target="_blank" rel="external">#1063</a>（Olov Lassus）。</li>
+<li><strong>iojs:</strong> 一個“內部模組” API 已被導入，它允許核心代碼在 JavaScript 模組不在公開它們為一個開放API前提下，共享這個模組，這個功能只給核心使用 <a href="https://github.com/iojs/io.js/pull/848" target="_blank" rel="external">#848</a>（Vladimir Kurchatkin）。</li>
+<li><strong>timers:</strong> 兩個次要問題已被修復：</li>
+<li><code>Timer.close()</code> 現在是適當地冪等 <a href="https://github.com/iojs/io.js/issues/1288" target="_blank" rel="external">#1288</a>（Petka Antonov）。<code>setTimeout()</code> 現在在回呼中呼叫 <code>unref()</code> 只會執行一次回呼函式 <a href="https://github.com/iojs/io.js/pull/1231" target="_blank" rel="external">#1231</a>（Roman Reiss）。注意：仍然有其他未解決的顧慮，例如 <a href="https://github.com/iojs/io.js/pull/1152" target="_blank" rel="external">#1152</a>。</li>
+<li><strong>Windows:</strong> 加入 “延遲-載入 掛鉤”，用來編譯 Windows 附加元件，這應能緩解 Windows 使用者在 io.js 上使用附加元件的某些問題 <a href="https://github.com/iojs/io.js/pull/1251" target="_blank" rel="external">#1251</a>（Bert Belder）。</li>
+<li><strong>V8:</strong> 次要臭蟲修復，升級 V8 至 4.1.0.27。</li>
+<li><strong>npm:</strong> 升級 npm 至 2.7.4。詳情請見 npm 的 <a href="https://github.com/npm/npm/blob/master/CHANGELOG.md#v274-2015-03-20" target="_blank" rel="external">CHANGELOG.md</a>。</li>
+</ul>
+<h2 id="已知問題">已知問題</h2><ul>
+<li>某些存在於計時器與<code>unref()</code>仍待解決。請見 <a href="https://github.com/iojs/io.js/pull/1152" target="_blank" rel="external">#1152</a>。</li>
+<li>REPL 的代理配對會導致終端凍結 <a href="https://github.com/iojs/io.js/issues/690" target="_blank" rel="external">#690</a></li>
+<li>io.js 不可能編譯成靜態函式庫 <a href="https://github.com/iojs/io.js/issues/686" target="_blank" rel="external">#686</a></li>
+<li><code>process.send()</code> 如同文件所建議並非同步，在 1.0.2 版新增了回歸，請見 <a href="https://github.com/iojs/io.js/issues/760" target="_blank" rel="external">#760</a> 及修改 <a href="https://github.com/iojs/io.js/issues/774" target="_blank" rel="external">#774</a></li>
+<li>當某個DNS查詢正在處理中，呼叫 <code>dns.setServers()</code> 會導致程序崩潰在某個失敗的斷言 <a href="https://github.com/iojs/io.js/issues/894" target="_blank" rel="external">#894</a></li>
+</ul>
+<h2 id="社群更新">社群更新</h2><ul>
+<li><a href="https://www.scaleway.com/" target="_blank" rel="external">Scaleway</a> 提供某些 ARM 資源給 io.js 的 測試/建置 基礎結構。</li>
+<li>Medium 上新發佈的文章，有關與 Node.js 的一致：<a href="https://medium.com/node-js-javascript/help-us-reconcile-node-js-and-io-js-c060a9ec1bd4" target="_blank" rel="external">幫助我們調和 node.js 及 io.js</a></li>
+<li><a href="https://travis-ci.org/Reactive-Extensions/RxJS/builds/56671837" target="_blank" rel="external">Reactive-Extensions/RxJS</a> 新增對 iojs 支援</li>
+<li>合併 <a href="https://github.com/joyent/nodejs-advisory-board/pull/30" target="_blank" rel="external">joyent/nodejs-advisory-board#30</a></li>
+<li>Mikeal Rogers 正在致力於調和專案生命週期及 io.js 工作小組 <a href="https://github.com/joyent/nodejs-advisory-board/pull/33" target="_blank" rel="external">joyent/nodejs-advisory-board#33</a></li>
+<li>Rod Vagg 開了論壇，有關 Node.js 的一致 <a href="https://github.com/iojs/io.js/issues/1336" target="_blank" rel="external">iojs/io.js#1336</a></li>
+</ul>
+<h2 id="即將舉行的活動">即將舉行的活動</h2><ul>
+<li><a href="http://nodeconf.com/" target="_blank" rel="external">NodeConf</a> 的門票已經開始販售，6/8-9 於加州奧克蘭，NodeConf Adventure 則是 6/11-14 於加州沃克溪農場。</li>
+<li><a href="http://2015.cascadiajs.com/" target="_blank" rel="external">CascadiaJS</a> 門票開賣，時間是 7/8~7/10 於華盛頓州。</li>
+<li><a href="http://nodeconf.eu/" target="_blank" rel="external">NodeConf EU</a> 門票開賣，時間是 9/6~9/9 於愛爾蘭瓦特福。</li>
+<li><a href="http://nodejs.connpass.com/event/13182/" target="_blank" rel="external">nodeSchool 東京</a> 將會在 4/12 於日本東京舉辦。</li>
+</ul>
+<p>原文：<a href="https://medium.com/node-js-javascript/io-js-week-of-april-3rd-a4e1fe0c38c1" target="_blank" rel="external">io.js Week of April 3rd</a>，作者：<a href="https://medium.com/@iojs" target="_blank" rel="external">@iojs</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="v1-6-3_釋出">v1.6.3 釋出</h2><p>這週我們有一個新版本釋出 <a href="https://iojs.org/dist/v1.6.3/" target="_blank" rel="external">v1.6.3</a>，完整的更新日誌可以]]>
+    </summary>
+    
+      <category term="iojs 週報" scheme="http://tw.iojs.org/categories/iojs-%E9%80%B1%E5%A0%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[npm 週報 2015-03-31]]></title>
+    <link href="http://tw.iojs.org/2015/04/04/npm-weekly-10/"/>
+    <id>http://tw.iojs.org/2015/04/04/npm-weekly-10/</id>
+    <published>2015-04-04T21:25:38.000Z</published>
+    <updated>2015-05-13T22:57:58.680Z</updated>
+    <content type="html"><![CDATA[<h2 id="Angular_增加對_Browserify_的支援">Angular 增加對 Browserify 的支援</h2><p><img src="https://40.media.tumblr.com/356647e1c5f5d0b39e7cc34c345cbd12/tumblr_inline_nm34lv74av1t68bpr_500.png" alt=""><br>如果你沒注意到這個消息，Angular 在最近新版本中提到在 <a href="https://github.com/angular/angular.js/blob/master/CHANGELOG.md#1314-instantaneous-browserification-2015-02-24" target="_blank" rel="external">1.3.14 instantaneous-browserification</a> 將對 Browserify 有更好的支援。這意謂著你的套件相依可以幫你處理一些相依樹的問題。如果要使用這個新個功能，對模組以及應用程式都需要做一些<a href="http://blog.npmjs.org/post/114584444410/using-angulars-new-improved-browserify-support" target="_blank" rel="external">調整</a>。</p>
+<h2 id="CLI_有什麼新功能？">CLI 有什麼新功能？</h2><p>我們在最近幾週釋出補丁版本（如果你不了解什麼是語意化版本，這種釋出版本代表我們並沒有增加新的功能）。主要是對於測試套件的修復。如果你也希望幫忙讓 npm 在 Travis 上轉為綠燈，請參閱 Forrest <a href="https://twitter.com/othiym23/status/579103004797706240" target="_blank" rel="external">徵求幫忙的文章</a>。</p>
+<h2 id="社群">社群</h2><p><img src="https://40.media.tumblr.com/827f89a5e2dd3c248c0839a19daca871/tumblr_inline_nm35skh1CG1t68bpr_500.png" alt=""></p>
+<p><a href="http://www.nearform.com/" target="_blank" rel="external">nearForm</a> 的成員在 <a href="http://www.nearform.com/nodecrunch/coding-with-nodejs/" target="_blank" rel="external">Tips for coding with #Nodejs: Making use of the extensive @npmjs ecosystem</a> 一文中討論關於他們評估套件的策略。可以從中得到許多啟發，而且正如他們所指出的，你也可以檢閱程式碼。<a href="https://twitter.com/aredridel" target="_blank" rel="external">Aria Stewart</a> 有一個關於<a href="https://github.com/aredridel/how-to-read-code/blob/master/how-to-read-code.md" target="_blank" rel="external">如何閱讀程式碼</a>的分享。</p>
+<h2 id="你如何選擇套件？">你如何選擇套件？</h2><p>nearForm 的成員提到他們如何挑選套件，那你呢？今年我們其中一個目標就是能更方便地找到對你有幫助的套件，所以我們<a href="http://blog.npmjs.org/post/115128654255/how-do-you-choose-packages" target="_blank" rel="external">很希望能夠聽到</a>你是用什麼方法來做決定的。</p>
+<p>原文：<a href="http://blog.npmjs.org/post/115129655415/npm-weekly-10" target="_blank" rel="external">npm Weekly, #10</a>，作者：<a href="http://blog.npmjs.org/" target="_blank" rel="external">@npm</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="Angular_增加對_Browserify_的支援">Angular 增加對 Browserify 的支援</h2><p><img src="https://40.media.tumblr.com/356647e1c5f5d0b39e7cc34c345cbd12]]>
+    </summary>
+    
+      <category term="npm 週報" scheme="http://tw.iojs.org/categories/npm-%E9%80%B1%E5%A0%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[io.js 週報 2015.03.27]]></title>
+    <link href="http://tw.iojs.org/2015/04/01/weekly-update-march-27th/"/>
+    <id>http://tw.iojs.org/2015/04/01/weekly-update-march-27th/</id>
+    <published>2015-04-01T15:25:28.000Z</published>
+    <updated>2015-05-13T22:57:58.680Z</updated>
+    <content type="html"><![CDATA[<h2 id="io-js_1-6-2_釋出">io.js 1.6.2 釋出</h2><p>這週我們有一個新版本釋出 <a href="https://iojs.org/dist/v1.6.2/" target="_blank" rel="external">v1.6.2</a>，完整的更新日誌可以在 <a href="https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md" target="_blank" rel="external">Github</a> 找到。</p>
+<h2 id="值得注意的更動">值得注意的更動</h2><ul>
+<li><strong>Windows:</strong> 再一次，進行中改善可以在測試案例看到結果。如同 v1.4.2 更新日誌，CI 系統及設定問題阻礙了 Windows 測試正確地回報結果，這個問題及代碼似乎已經完全解決。</li>
+<li><strong>FreeBSD:</strong> 一個影響 io.js/Node.js 的<a href="https://lists.freebsd.org/pipermail/freebsd-current/2015-March/055043.html" target="_blank" rel="external">核心臭蟲</a>已經被<a href="https://github.com/joyent/node/issues/9326" target="_blank" rel="external">發掘</a>且修補已經出爐避免io.js被影響（Fedor Indutny）<a href="https://github.com/iojs/io.js/pull/1218" target="_blank" rel="external">#1218</a>。</li>
+<li><strong>module:</strong> 現在你可以用 <code>require(&#39;.&#39;)</code> 來取代 <code>require(&#39;./&#39;)</code>，這個考慮是個臭蟲修補（Michaël Zasso）<a href="https://github.com/iojs/io.js/pull/1185" target="_blank" rel="external">#1185</a>。</li>
+<li><strong>v8:</strong> 更新到 4.1.0.25 包含— <code>max_old_space_size</code> 數值大於 4096 及支援 Solaris，兩者都已經包含在 io.js。</li>
+</ul>
+<h2 id="已知問題">已知問題</h2><ul>
+<li>有個微小的記憶體洩漏可能仍然存在，但是已經是適當地被識別出來，詳細請見 <a href="https://github.com/iojs/io.js/issues/1075" target="_blank" rel="external">#1075</a>。</li>
+<li>REPL 的代理配對會導致終端凍結 <a href="https://github.com/iojs/io.js/issues/690" target="_blank" rel="external">#690</a></li>
+<li>io.js 不可能編譯成靜態函式庫 <a href="https://github.com/iojs/io.js/issues/686" target="_blank" rel="external">#686</a></li>
+<li><code>process.send()</code> 如同文件所建議並非同步，在 1.0.2 版新增了回歸，請見 <a href="https://github.com/iojs/io.js/issues/760" target="_blank" rel="external">#760</a> 及修改 <a href="https://github.com/iojs/io.js/issues/774" target="_blank" rel="external">#774</a></li>
+<li>當某個DNS查詢正在處理中，呼叫 <code>dns.setServers()</code> 會導致程序崩潰在某個失敗的斷言 <a href="https://github.com/iojs/io.js/issues/894" target="_blank" rel="external">#894</a></li>
+</ul>
+<h2 id="社群更新">社群更新</h2><ul>
+<li>Node.js 技術管理草案已經提出，可以在這裡<a href="https://github.com/joyent/nodejs-advisory-board/pull/30" target="_blank" rel="external">觀看</a>。</li>
+<li>Microsoft Visual Studio 團隊釋出了 Node.js Tools 1.0 for Visual Studio，這次釋出包含豐富的編輯器、代碼補完、互動視窗、進階除錯及效能評測。請見<a href="http://blogs.msdn.com/b/visualstudio/archive/2015/03/25/node-js-tools-1-0-for-visual-studio.aspx" target="_blank" rel="external">公告</a>。</li>
+<li><a href="http://blog.sematext.com/2015/03/30/nodejs-iojs-monitoring/" target="_blank" rel="external">SPM 監控支援 node.js 及 io.js</a>，監控可加入效能監測、通知及異常偵測。</li>
+</ul>
+<h2 id="即將舉行的活動">即將舉行的活動</h2><ul>
+<li><a href="http://nodeconf.com/" target="_blank" rel="external">NodeConf</a> 的門票已經開始販售，6/8-9 於加州奧克蘭，NodeConf Adventure 則是 6/11-14 於加州沃克溪農場。</li>
+<li><a href="http://2015.cascadiajs.com/" target="_blank" rel="external">CascadiaJS</a> 門票開賣，時間是 7/8~7/10 於華盛頓州。</li>
+<li><a href="http://nodeconf.eu/" target="_blank" rel="external">NodeConf EU</a> 門票開賣，時間是 9/6~9/9 於愛爾蘭瓦特福。</li>
+<li><a href="http://nodejs.connpass.com/event/13182/" target="_blank" rel="external">nodeSchool 東京</a> 將會在 4/12 於日本東京舉辦。</li>
+</ul>
+<p>原文：<a href="https://medium.com/node-js-javascript/io-js-week-of-march-27th-9555f36bbb9a" target="_blank" rel="external">io.js Week of March 27th</a>，作者：<a href="https://medium.com/@iojs" target="_blank" rel="external">@iojs</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="io-js_1-6-2_釋出">io.js 1.6.2 釋出</h2><p>這週我們有一個新版本釋出 <a href="https://iojs.org/dist/v1.6.2/" target="_blank" rel="external">v1.6.2</a>]]>
+    </summary>
+    
+      <category term="iojs 週報" scheme="http://tw.iojs.org/categories/iojs-%E9%80%B1%E5%A0%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[io.js 週報 2015.03.20]]></title>
+    <link href="http://tw.iojs.org/2015/03/20/weekly-update-march-20th/"/>
+    <id>http://tw.iojs.org/2015/03/20/weekly-update-march-20th/</id>
+    <published>2015-03-20T09:02:55.000Z</published>
+    <updated>2015-05-13T22:57:58.680Z</updated>
+    <content type="html"><![CDATA[<p>io.js 1.6.1, openssl 升級, 社群活動及其他事項。</p>
+<p>這週我們釋出兩個 io.js 版本，<a href="https://iojs.org/dist/v1.6.1/" target="_blank" rel="external">v1.6.1</a> 及 <a href="https://iojs.org/dist/v1.6.0/" target="_blank" rel="external">v1.6.0</a>，完整的更新項目可以在 <a href="https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md" target="_blank" rel="external">Github</a> 上找到。</p>
+<h2 id="io-js_1-6_釋出">io.js 1.6 釋出</h2><h3 id="1-6-1">1.6.1</h3><ul>
+<li><strong>path:</strong> path.resolve()新增型別檢查 <a href="https://github.com/iojs/io.js/pull/1153" target="_blank" rel="external">#1153</a>，不包含某些特殊案例，特別是 path.dirname(undefined)。已經放鬆 path.dirname()、path.basename() 以及 path.extname() 的型別檢查（Colin Ihrig）<a href="https://github.com/iojs/io.js/pull/1216" target="_blank" rel="external">#1216</a>。</li>
+<li><strong>querystring:</strong> 對於 querystring.parse() 以及 querystring.stringify() 所做的最佳化 <a href="https://github.com/iojs/io.js/pull/847" target="_blank" rel="external">#847</a> 妨礙了數字被 querystring.escape() 正確轉換，導致測試出現死角 <a href="https://github.com/iojs/io.js/issues/1208" target="_blank" rel="external">#1208</a>。這個臭蟲以及測試都已經被修復 (Jeremiah Senkpiel) <a href="https://github.com/iojs/io.js/pull/1213" target="_blank" rel="external">#1213</a>。</li>
+</ul>
+<h3 id="1-6-0">1.6.0</h3><ul>
+<li><strong>node:</strong> 一個新的 -r 或 — require 命令列參數可以用來在起始階段預先載入模組 (Ali Ijaz Sheikh) <a href="https://github.com/iojs/io.js/pull/881" target="_blank" rel="external">#881</a>。</li>
+<li><strong>querystring:</strong> parse() 及 stringify() 效能更快了 (Brian White) <a href="https://github.com/iojs/io.js/pull/847" target="_blank" rel="external">#847</a>。</li>
+<li><strong>http:</strong> http.ClientRequest#flush() 方法已被棄置，取而代之的是 http.ClientRequest#flushHeaders()，與 Node.js v0.12 的改變相同 <a href="https://github.com/joyent/node/pull/9048" target="_blank" rel="external">joyent/node#9048</a> (Yosuke Furukawa) <a href="https://github.com/iojs/io.js/pull/1156" target="_blank" rel="external">#1156</a>。</li>
+<li><strong>net:</strong> 允許 server.listen() 接受字串作為 port 的參數，例如 { port: “1234” } 以符合 <a href="https://github.com/joyent/node/pull/9268" target="_blank" rel="external">joyent/node#9268</a> 中 net.connect 接受相容格式的參數 (Ben Noordhuis) <a href="https://github.com/iojs/io.js/pull/1116" target="_blank" rel="external">#1116</a>。</li>
+<li><strong>tls:</strong> 回報的記憶體洩漏問題有更進一步的處理，儘管在這問題中顯示出這是個次要問題，可在 <a href="https://github.com/iojs/io.js/issues/1075" target="_blank" rel="external">#1075</a> 追蹤問題。</li>
+<li><strong>v8:</strong> 修補一個整數溢位的問題，當 max_old_space_size 的數值大於 4096 的時候 (Ben Noordhuis) <a href="https://github.com/iojs/io.js/pull/1166" target="_blank" rel="external">#1166</a>。</li>
+<li><strong>platforms:</strong> io.js CI 回報已經通過 <strong>FreeBSD</strong> 以及 <strong>SmartOS</strong> (Solaris)。</li>
+<li><strong>npm:</strong> 升級至 2.7.1，細節請參閱 <a href="https://github.com/npm/npm/blob/master/CHANGELOG.md#v271-2015-03-05" target="_blank" rel="external">npm CHANGELOG.md</a></li>
+</ul>
+<h3 id="已回報問題">已回報問題</h3><ul>
+<li>可能存在與 TLS 相關的記憶體洩漏問題，細節在 <a href="https://github.com/iojs/io.js/issues/1075" target="_blank" rel="external">#1075</a>。</li>
+<li>Surrogate pair in REPL can freeze terminal #690</li>
+<li>io.js 無法編譯成靜態函式庫 <a href="https://github.com/iojs/io.js/issues/686" target="_blank" rel="external">#686</a></li>
+<li>process.send() 不是文件所建議的非同步，降級問題發生於 1.0.2 版，詳情請見 <a href="https://github.com/iojs/io.js/issues/760" target="_blank" rel="external">#760</a> 以及修正 <a href="https://github.com/iojs/io.js/issues/774" target="_blank" rel="external">#774</a></li>
+<li>當 DNS 查詢進行中的時候呼叫 dns.setServers() 將會導致程序崩潰 <a href="https://github.com/iojs/io.js/issues/894" target="_blank" rel="external">#894</a></li>
+</ul>
+<h2 id="社群更新">社群更新</h2><ul>
+<li>browserify 開始支援 io.js，可以到<a href="https://twitter.com/yosuke_furukawa/status/577150547850969088" target="_blank" rel="external">這裡</a>看到公告。</li>
+<li>express.js 加入對 io.js 的支援。</li>
+<li>在過去的兩週，我們能夠訪問來自 Joyent 的硬件，並且引入了一個 V8 的補丁，所以可以成功構建 io.js。在那之後我們致力通過 <a href="https://github.com/iojs/build/pull/64" target="_blank" rel="external">SmartOS</a> 和 <a href="https://github.com/iojs/io.js/pull/1167" target="_blank" rel="external">FreeBSD</a> 上的測試，經過這兩天測試通過了，這要歸功於構建團隊和 <a href="https://github.com/jbergstroem" target="_blank" rel="external">Johan Bergström</a>。</li>
+<li><a href="https://github.com/petkaantonov" target="_blank" rel="external">Petka Antonov</a> 提出在 io.js 中實作 workers（需要加上實驗旗標來啟用），你可以到<a href="https://github.com/iojs/io.js/pull/1159" target="_blank" rel="external">這裡</a>參與討論。</li>
+<li>io.js 把 openssl <a href="https://github.com/iojs/io.js/pull/1206" target="_blank" rel="external">升級</a>到 1.0.1m。</li>
+</ul>
+<h2 id="即將舉行的活動">即將舉行的活動</h2><ul>
+<li><a href="http://nodeconf.com/" target="_blank" rel="external">NodeConf</a> 的門票已經開始販售，6/8-9 於加州奧克蘭，NodeConf Adventure 則是 6/11-14 於加州沃克溪農場。</li>
+<li><a href="http://2015.cascadiajs.com/" target="_blank" rel="external">CascadiaJS</a> 門票開賣，時間是 7/8~7/10 於華盛頓州。</li>
+<li><a href="http://nodeconf.eu/" target="_blank" rel="external">NodeConf EU</a> 門票開賣，時間是 9/6~9/9 於愛爾蘭瓦特福。</li>
+</ul>
+<p>原文：<a href="https://medium.com/node-js-javascript/io-js-1-6-release-1df38cf64e6c" target="_blank" rel="external">io.js Week of March 20th</a>，作者：<a href="https://medium.com/@iojs" target="_blank" rel="external">@iojs</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>io.js 1.6.1, openssl 升級, 社群活動及其他事項。</p>
+<p>這週我們釋出兩個 io.js 版本，<a href="https://iojs.org/dist/v1.6.1/" target="_blank" rel="external">v1.6.]]>
+    </summary>
+    
+      <category term="iojs 週報" scheme="http://tw.iojs.org/categories/iojs-%E9%80%B1%E5%A0%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[npm 週報 #9 2015-03-17]]></title>
+    <link href="http://tw.iojs.org/2015/03/18/npm-weekly-9/"/>
+    <id>http://tw.iojs.org/2015/03/18/npm-weekly-9/</id>
+    <published>2015-03-18T13:48:04.000Z</published>
+    <updated>2015-05-13T22:57:58.680Z</updated>
+    <content type="html"><![CDATA[<p>本週的 npm 最新消息，同樣也<a href="https://www.npmjs.com/npm-weekly" target="_blank" rel="external">可以透過 email 訂閱</a>。</p>
+<h2 id="一個暫行性的_CLI_小問題">一個暫行性的 CLI 小問題</h2><p>只是一個小小的通知，給有使用<code>npm shrinkwrap --dev</code>的使用者，在上週的<code>npm@next</code>版本中(即<code>2.7.2</code>版)，這個指令有個<a href="https://github.com/npm/npm/issues/7641" target="_blank" rel="external">次要的臭蟲</a>。<a href="https://twitter.com/othiym23" target="_blank" rel="external">弗里斯特</a>馬上進行修補並且標上了新的<code>npm@next</code>標籤。感謝 <a href="https://twitter.com/dan_abramov" target="_blank" rel="external">dan_abramov</a> 回報了這個非常有幫助的問題以及對<code>npm@next</code>的測試。</p>
+<p>如果你不知道什麼是<code>npm@next</code>，它是一個 npm 版本，將會在該版本的下一週釋出成穩定版，而該穩定版會標上<code>npm@latest</code>的標籤。當你執行了<code>npm install -g npm</code>，你會取得<code>npm@latest</code>版本。但如果你想要成為測試者，試用最新的功能，確保它是的確穩定的版本，那你可以使用<code>npm install -g npm@next</code>來取得。我們 &lt;3 測試者。</p>
+<h2 id="npm@3_將會帶來什麼？">npm@3 將會帶來什麼？</h2><p>說到<code>npm shrinkwrap</code>，在<code>npm@3</code>中，使用 shrinkwrap 會更加方便。當你在專案目錄下安裝或移除某個模組時，加上<code>--save</code>參數， npm 將會為你自動更新<code>npm-shrinkwrap.json</code>。只要你都是使用 npm 指令來管理你在 <code>package.json</code> 裡的相依性（而不是手動編修檔案），<code>npm-shrinkwrap.json</code>將會自動同步。</p>
+<h2 id="來自社群">來自社群</h2><p><img src="https://41.media.tumblr.com/ae98f831f1080fb615e590134b13fd71/tumblr_inline_nld81cxuvF1t68bpr_500.png" alt=""></p>
+<p>你是否曾經遇過，同時撰寫一種應用程式以及一種模組，而該應用程式同時也使用了該模組？你是否使用 <code>npm link</code>來做這件事？如果沒有，你可能會想看看 egghead.io 影片，<a href="https://egghead.io/lessons/node-js-using-npm-link-to-use-node-modules-that-are-in-progress" target="_blank" rel="external">使用 npm link 來使用”開發中”的 node 模組</a></p>
+<p><a href="https://twitter.com/bclinkinbeard" target="_blank" rel="external">Ben Clinkinbeard</a>，該影片的拍攝者，同時也是 PR 背後的作者，讓最近釋出的 <a href="https://github.com/angular/angular.js/blob/master/CHANGELOG.md#1314-instantaneous-browserification-2015-02-24" target="_blank" rel="external">Angular 1.3.14 instantaneous-browserification</a> 能夠與 Browserify 更好的結合。所以，感謝 Ben！</p>
+<h2 id="預先收集的集合">預先收集的集合</h2><p>我們正在規劃 npm 的一個新功能，稱之為集合（原文 collections）。這將會是由用戶撰寫的指南，告訴你如何在一個漂亮的佈局下同時使用多個 packages。</p>
+<p>在此期間，人們正在製作他們自己的集合。<a href="https://twitter.com/zeke" target="_blank" rel="external">Zeke</a> 已經收集了<a href="https://github.com/npm/newww/issues/313" target="_blank" rel="external">一堆集合</a>，看看人們做了些什麼。如果你也有集合，歡迎告訴我們，你也可能會想要看看其他人的集合，他們非常整齊漂亮。</p>
+<p>原文：<a href="http://blog.npmjs.org/post/113882628280/npm-weekly-9" target="_blank" rel="external">npm weekly, #9</a>，作者：<a href="http://blog.npmjs.org/" target="_blank" rel="external">@npm</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>本週的 npm 最新消息，同樣也<a href="https://www.npmjs.com/npm-weekly" target="_blank" rel="external">可以透過 email 訂閱</a>。</p>
+<h2 id="一個暫行性的_CLI_小問題">]]>
+    </summary>
+    
+      <category term="npm 週報" scheme="http://tw.iojs.org/categories/npm-%E9%80%B1%E5%A0%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[io.js 週報 2015.03.13]]></title>
+    <link href="http://tw.iojs.org/2015/03/15/weekly-update-march-13th/"/>
+    <id>http://tw.iojs.org/2015/03/15/weekly-update-march-13th/</id>
+    <published>2015-03-15T09:02:55.000Z</published>
+    <updated>2015-05-13T22:57:58.680Z</updated>
+    <content type="html"><![CDATA[<h1 id="io-js_釋出_1-5-1_版">io.js 釋出 1.5.1 版</h1><p><a href="https://github.com/rvagg" target="_blank" rel="external">@rvagg</a> 在 3/9 (一) 釋出了 io.js <a href="https://iojs.org/dist/v1.5.1/" target="_blank" rel="external">v1.5.1</a>。可以在 <a href="https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md" target="_blank" rel="external">GitHub 上</a> 找到完整的變更日誌。</p>
+<h3 id="主要變更">主要變更</h3><ul>
+<li><strong>tls</strong>: 之前回報的 TLS 記憶體洩漏已經在這次釋出中藉由多個 commit 解決了。現在的測試指出，<em>可能</em> 還有一些洩漏問題。完整的進度追蹤在 <a href="https://github.com/iojs/io.js/issues/1075" target="_blank" rel="external">#1075</a>。</li>
+<li><strong>http</strong>: 修復一個回報在 <a href="https://github.com/joyent/node/issues/9348" target="_blank" rel="external">joyent/node#9348</a> 和 <a href="https://github.com/npm/npm/issues/7349" target="_blank" rel="external">npm/npm#7349</a> 的錯誤。當 <code>&#39;error&#39;</code> 事件發生時，待處理 (pending) 的資料沒有被完整讀出，導致 <code>socket.destroy()</code> 的一個 assert 失敗。 (Fedor Indutny) <a href="https://github.com/iojs/io.js/pull/1103" target="_blank" rel="external">#1103</a></li>
+</ul>
+<h3 id="已知問題">已知問題</h3><ul>
+<li>可能仍然有與 TLS 相關的記憶體洩漏，細節請參閱 <a href="https://github.com/iojs/io.js/issues/1075" target="_blank" rel="external">#1075</a>。</li>
+<li>Windows 仍舊有使用者回報存在一些測試錯誤的情形，我們正優先追查這些問題的原因。請參閱 <a href="https://github.com/iojs/io.js/issues/1005" target="_blank" rel="external">#1005</a>.</li>
+<li>在 REPL 中代理對 (Surrogate pair) 會凍結終端 <a href="https://github.com/iojs/io.js/issues/690" target="_blank" rel="external">#690</a></li>
+<li>不能編譯 io.js 為靜態函式庫 <a href="https://github.com/iojs/io.js/issues/686" target="_blank" rel="external">#686</a></li>
+<li>1.0.2 重新加入的 <code>process.send()</code> 不如文件上所說為同步地，參閱 <a href="https://github.com/iojs/io.js/issues/760" target="_blank" rel="external">#760</a> 和 <a href="https://github.com/iojs/io.js/issues/774" target="_blank" rel="external">#774</a> 的修補</li>
+<li>當 DNS 查詢進行到一半時呼叫 <code>dns.setServers()</code>，會導致程序當機並 assert 失敗 <a href="https://github.com/iojs/io.js/issues/894" target="_blank" rel="external">#894</a></li>
+</ul>
+<h1 id="社群消息">社群消息</h1><ul>
+<li><a href="https://twitter.com/subfuzion" target="_blank" rel="external">Tony Pujals</a> 在 <a href="http://www.meetup.com/BayNode/events/220246228/" target="_blank" rel="external">BayNode</a> 做了一個關於 io.js 未來規劃的簡報。影片已經在 3/9 上傳到 <a href="https://vimeo.com/121707989" target="_blank" rel="external">vimeo</a>，簡報也可以提供給任何人於<a href="ron.buell@rd.io">各地討論會</a>上使用。</li>
+<li><a href="https://github.com/jbergstroem" target="_blank" rel="external">Johan Bergström</a> 為了 io.js 正準備向 <a href="https://codereview.chromium.org/990063002" target="_blank" rel="external">V8</a> 提交一個修補，要在最新版中加入對 Solaris 的支援。</li>
+<li><a href="http://nodeup.com/eightyfour" target="_blank" rel="external">NodeUp 84集</a> 是有關 io.js 最新消息的第一集，參加者是 <a href="https://github.com/mikeal" target="_blank" rel="external">Mikeal Rogers</a>，<a href="https://github.com/trevnorris" target="_blank" rel="external">Trevor Norris</a>，以及 <a href="https://github.com/bmeck" target="_blank" rel="external">Bradley Meck</a>。</li>
+<li><a href="https://github.com/mikeal" target="_blank" rel="external">Mikeal Rogers</a> 接受 <a href="http://descriptive.audio" target="_blank" rel="external">Descriptive</a> 於單元稱 <a href="http://descriptive.audio/episodes/12" target="_blank" rel="external">We’ve Never Had This Many Active Contributors to Core Before</a> 中接受採訪。</li>
+<li><a href="https://twitter.com/wolfeidau" target="_blank" rel="external">Mark Wolfe</a> 在 <a href="https://twitter.com/melbjs" target="_blank" rel="external">@melbjs</a> 討論會上給了一個 <a href="https://twitter.com/wolfeidau/status/575785856545378304" target="_blank" rel="external">talk about io.js</a> 的簡報，</li>
+<li><a href="http://dockeri.co/" target="_blank" rel="external">dockeri.co</a> 正式運行在 io.js 之上，你可以在<a href="https://twitter.com/wjblankenship/status/575867637680369665" target="_blank" rel="external">這邊</a>看到公告。</li>
+<li><a href="https://nodejs.org/about/advisory-board/" target="_blank" rel="external">Node.js Advisory Board</a> 正式開始討論 <a href="https://github.com/iojs/io.js/issues/978" target="_blank" rel="external">io.js/Node.js reconciliation proposal</a> 和解草案，你可以在<a href="https://github.com/joyent/nodejs-advisory-board/blob/master/meetings/2015-03-09/minutes.md#nodejsiojs-reconciliation-bb" target="_blank" rel="external">這裡</a>看到會議記錄。</li>
+<li>2015-03-11 的 io.js 技術委員會議可以在 <a href="http://www.youtube.com/watch?v=xXLnNSL0qvU" target="_blank" rel="external">這裡</a> 看到</li>
+</ul>
+<h1 id="即將舉行的活動">即將舉行的活動</h1><ul>
+<li><a href="http://nodeconf.com/" target="_blank" rel="external">NodeConf</a> 的門票正式販售，6/8~9 於加州奧克蘭。NodeConf Adventure 是 6/11~6/14 於加州沃克溪農場。</li>
+<li><a href="http://2015.cascadiajs.com/" target="_blank" rel="external">CascadiaJS</a> 門票開賣，時間是 7/8~7/10 於華盛頓州。</li>
+<li><a href="http://nodeconf.eu/" target="_blank" rel="external">NodeConf EU</a> 門票開賣，時間是 9/6~9/9 於愛爾蘭瓦特福。</li>
+</ul>
+<p>原文：<a href="https://medium.com/node-js-javascript/io-js-week-of-march-13th-e3024cc66802" target="_blank" rel="external">io.js Week of March 13th</a>，作者：<a href="https://medium.com/@iojs" target="_blank" rel="external">@iojs</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="io-js_釋出_1-5-1_版">io.js 釋出 1.5.1 版</h1><p><a href="https://github.com/rvagg" target="_blank" rel="external">@rvagg</a> 在 3/9 (一) 釋出了]]>
+    </summary>
+    
+      <category term="iojs 週報" scheme="http://tw.iojs.org/categories/iojs-%E9%80%B1%E5%A0%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[npm 週報 2015-03-10]]></title>
+    <link href="http://tw.iojs.org/2015/03/12/npm-weekly-8/"/>
+    <id>http://tw.iojs.org/2015/03/12/npm-weekly-8/</id>
+    <published>2015-03-12T16:56:11.000Z</published>
+    <updated>2015-05-13T22:57:58.680Z</updated>
+    <content type="html"><![CDATA[<p>本週的 npm 最新消息，同樣也<a href="https://www.npmjs.com/npm-weekly" target="_blank" rel="external">可以透過 email 訂閱</a>。</p>
+<h2 id="CJ_分享_Node-js_Scale_議題">CJ 分享 Node.js Scale 議題</h2><p>在數週前的 Node Summit，CJ 分享了一個很棒的主題，是關於 <a href="http://nodesummit.com/media/node-js-at-scale/" target="_blank" rel="external">Node.js at scale</a>。</p>
+<h2 id="私有_modules_幾乎都在這裡">私有 modules 幾乎都在這裡</h2><p>如果你對於私有 npm module 有興趣的話，歡迎<a href="http://blog.npmjs.org/post/113172137370/npm-private-modules-are-coming-soon" target="_blank" rel="external">告訴我們</a>，歡迎在底下留言。</p>
+<h2 id="jQuery_及_npm_第三波">jQuery 及 npm 第三波</h2><p>在前幾週，我們分享了如何透過 npm 發佈 jQuery plugin。本週我們將跟你說<a href="http://blog.npmjs.org/post/112712169830/making-your-jquery-plugin-work-better-with-npm" target="_blank" rel="external">如何對 jQuery plugin 做點小改變</a>，讓你的使用者更容易的透過 npm 工具(如 Browserify)來使用你的 plugin。</p>
+<h2 id="CLI_新功能">CLI 新功能</h2><p>npm@2.7.0, 這個版本中增加了一些小功能</p>
+<ul>
+<li>新增 <code>--dev</code> or <code>--prod</code> 參數搭配使用。</li>
+<li>當你使用 <a href="https://docs.npmjs.com/misc/scripts" target="_blank" rel="external">npm run-scrip</a> 的時候並且設定在 package.json，只會顯示兩種列表：一種是列出 postpublish 預載模式，另一種是列出使用者自定的 npm run。</li>
+<li>當你使用 npm init 進行設定你的 package.json ，現在可以加入 scope。</li>
+</ul>
+<p>感謝 npm 貢獻者 <a href="https://twitter.com/watilde" target="_blank" rel="external">@watilde</a> 的修正並且翻譯<a href="https://medium.com/@watilde" target="_blank" rel="external">大量 npm 文章給日本朋友</a> :)</p>
+<p>原文：<a href="http://blog.npmjs.org/post/113262605295/npm-weekly-8" target="_blank" rel="external">npm weekly, #8</a>，作者：<a href="http://blog.npmjs.org/" target="_blank" rel="external">@npm</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>本週的 npm 最新消息，同樣也<a href="https://www.npmjs.com/npm-weekly" target="_blank" rel="external">可以透過 email 訂閱</a>。</p>
+<h2 id="CJ_分享_Node-js_Sc]]>
+    </summary>
+    
+      <category term="npm 週報" scheme="http://tw.iojs.org/categories/npm-%E9%80%B1%E5%A0%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[io.js 週報 2015.03.06]]></title>
+    <link href="http://tw.iojs.org/2015/03/08/weekly-update-2015-03-06/"/>
+    <id>http://tw.iojs.org/2015/03/08/weekly-update-2015-03-06/</id>
+    <published>2015-03-08T19:22:51.000Z</published>
+    <updated>2015-05-13T22:57:58.680Z</updated>
+    <content type="html"><![CDATA[<p>Buffer.indexOf()、Tessel 2 以及更多消息。</p>
+<h1 id="io-js_1-5-0_釋出">io.js 1.5.0 釋出</h1><p><a href="https://github.com/rvagg" target="_blank" rel="external">@rvagg</a> 在 3/6（五）釋出了 io.js <a href="https://iojs.org/dist/latest/" target="_blank" rel="external">v1.5.0</a>。可以在 <a href="https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md" target="_blank" rel="external">Github</a> 上找到完整的變更日誌。</p>
+<h2 id="主要更動">主要更動</h2><ul>
+<li><p><strong>buffer:</strong> 提供 Buffer#indexOf() 方法，啟發自 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf" target="_blank" rel="external">Array#indexOf</a>。接受 String、Buffer 以及 Number 型態。Strings 將視為 UTF8。 (Trevor Norris) <a href="https://github.com/iojs/io.js/pull/561" target="_blank" rel="external">#561</a></p>
+</li>
+<li><p><strong>fs:</strong> 「fs」 的方法不再對 options 物件屬性執行 hasOwnProperty() 檢查，以允許 options 物件擁有 apply prototype 的屬性。 (Jonathan Ong) #635</p>
+</li>
+<li><p><strong>tls:</strong> 一個由 PayPal 回報，可能是 TLS 記憶體洩漏的問題。近期對於 <strong>stream_wrap</strong> 的更動可能造成問題。問題回報於 <a href="https://github.com/iojs/io.js/pull/1078" target="_blank" rel="external">#1078</a>，你可以在 <a href="https://github.com/iojs/io.js/issues/1075" target="_blank" rel="external">#1075</a> 得知目前的進展。(Fedor Indutny)</p>
+</li>
+<li><p><strong>npm:</strong> npm 升級至 2.7.0，細節請參閱<a href="https://github.com/npm/npm/blob/master/CHANGELOG.md#v270-2015-02-26" target="_blank" rel="external">更新項目</a>，其中解釋了為什麼這個原本可能是主要版號升級變成了次要版號。</p>
+</li>
+<li><p><strong>TC:</strong> Colin Ihrig (@cjihrig) 從 TC 退出，因為他希望可以放更多心力在程式撰寫上並減少開會時間。</p>
+</li>
+</ul>
+<h2 id="已知的問題">已知的問題</h2><ul>
+<li><p>可能與 TLS 相關的記憶體洩漏，細節請參閱 <a href="https://github.com/iojs/io.js/issues/1075" target="_blank" rel="external">#1075</a>。</p>
+</li>
+<li><p>Windows 仍舊有使用者回報存在一些測試錯誤的情形，我們正優先追查這些問題的原因。細節請參閱 <a href="https://github.com/iojs/io.js/issues/1005" target="_blank" rel="external">#1005</a>。</p>
+</li>
+<li><p>在 REPL 中代理對 (Surrogate pair) 會凍結終端 <a href="https://github.com/iojs/io.js/issues/690" target="_blank" rel="external">#690</a></p>
+</li>
+<li><p>不能編譯 io.js 為靜態函式庫 <a href="https://github.com/iojs/io.js/issues/686" target="_blank" rel="external">#686</a></p>
+</li>
+<li><p>1.0.2 重新加入的 process.send() 不如文件上所說為同步地，參閱 <a href="https://github.com/iojs/io.js/issues/760" target="_blank" rel="external">#760</a>  和 <a href="https://github.com/iojs/io.js/issues/774" target="_blank" rel="external">#774</a> 的修補</p>
+</li>
+</ul>
+<h1 id="社群消息">社群消息</h1><ul>
+<li><p>聽到 io.js 與 最新版 node.js 沒有受 <a href="https://freakattack.com/" target="_blank" rel="external">FREAK Attack</a> 影響，應該鬆一口氣吧。你正使用著 io.js 或最新版的 node.js 對吧？</p>
+</li>
+<li><p>Walmart 贊助了建構的機器來運行 io.js Jenkins 持續整合系統。<a href="https://github.com/orgs/iojs/teams/build" target="_blank" rel="external">@iojs/build</a> 團隊開始著手進行 SunOS 版本（正如你可以從 node.js 取得的一樣）。不過在此之前，有一個 V8 的臭蟲（<a href="https://github.com/iojs/io.js/pull/1079" target="_blank" rel="external">iojs/io.js#1079</a>）必須要先修復。</p>
+</li>
+<li><p>此外，我們也在此感謝以下的企業，對於 io.js 提供硬體以及相關的技術/支援/工程師的協助：</p>
+</li>
+<li><p>Digital Ocean (主要是 Linux) Rackspace (主要是 Windows) Voxer (OS X 和 FreeBSD) NodeSource (ARMv6 &amp; ARMv7) Linaro (ARMv8) Walmart (SmartOS / Solaris)</p>
+</li>
+<li><p>io.js 社群很努力的進行本地化的工作。目前有超過 20 種語系內容發佈到 <a href="http://iojs.org/" target="_blank" rel="external">io.js.org</a> 以及 i18n 社群網站上。此外，i18n 的連結也已經加到網站的頁面底部便與使用。你懷念自己的語系嗎？<a href="https://github.com/iojs/website/blob/master/TRANSLATION.md" target="_blank" rel="external">來協助我們吧！</a></p>
+</li>
+<li><p>既然提到翻譯，io.js <a href="http://roadmap.iojs.org/" target="_blank" rel="external">路徑圖的簡報</a>已經更新並加上其中語系的連結。</p>
+</li>
+<li><p>PayPal 做了一個實驗來比較 <a href="https://www.npmjs.com/package/kappa" target="_blank" rel="external">Kappa</a> 運行在 io.js、node.js 0.12，以及 node.js 0.10。PayPal 團隊也發現了可能造成記憶體洩漏的問題。一開始的問題回報在 <a href="https://github.com/iojs/io.js/pull/1078" target="_blank" rel="external">#1078</a>，後續的處理在 <a href="https://github.com/iojs/io.js/issues/1075" target="_blank" rel="external">#1075</a>。</p>
+</li>
+<li><p><a href="http://nodesource.com/" target="_blank" rel="external"><strong>NodeSource</strong></a> 開始提供 Ubuntu/Debian 的<a href="https://nodesource.com/blog/nodejs-v012-iojs-and-the-nodesource-linux-repositories" target="_blank" rel="external">程式包</a>，正如給 RHEL/Fedora 一樣。</p>
+</li>
+<li><p>io.js <a href="https://registry.hub.docker.com/u/library/iojs/" target="_blank" rel="external">Docker版本</a>，是一、二月中，十三個新加入的 <a href="http://blog.docker.com/2015/03/thirteen-new-official-repositories-added-in-january-and-february/" target="_blank" rel="external">Docker 官方容器</a>的其中之一。</p>
+</li>
+<li><p>NodeBots 以及 IoT 的人們應該會很高興聽到這個剛發佈的消息 - <a href="http://blog.technical.io/post/112787427217/tessel-2-new-hardware-for-the-tessel-ecosystem" target="_blank" rel="external"><strong>Tessel2</strong></a> 將<a href="http://blog.technical.io/post/112888410737/moving-faster-with-io-js" target="_blank" rel="external">原生支援 io.js</a>。</p>
+</li>
+<li><p><a href="https://twitter.com/maxbeatty" target="_blank" rel="external"><strong>@maxbeatty</strong></a> 正忙於建置新版的 <a href="http://jsperf.com/" target="_blank" rel="external">jsperf.com</a> 後端，運行於 io.js 以及完全開放原始碼。歡迎貢獻者！</p>
+</li>
+<li><p>部落格: @eranhammer 寫了一篇名為 <a href="http://hueniverse.com/2015/03/02/the-node-version-dilemma/" target="_blank" rel="external">The Node Version Dilemma</a> 的文章，其中討論了許多不同版本的 node.js / io.js，建議該使用哪個版本及在何時使用。</p>
+</li>
+</ul>
+<h1 id="對_io-js_的支援增加">對 io.js 的支援增加</h1><ul>
+<li><a href="https://npmjs.com/scrypt" target="_blank" rel="external"><strong>scrypt</strong></a> 已經支援 io.js，細節可以參閱這個 <a href="https://github.com/barrysteyn/node-scrypt/issues/39" target="_blank" rel="external">Github Issue</a>。</li>
+<li><a href="https://github.com/thlorenz/proxyquire" target="_blank" rel="external"><strong>proxyquire</strong></a> 發佈 v1.3.2 並支援 iojs。</li>
+</ul>
+<p>原文：<a href="https://medium.com/node-js-javascript/io-js-week-of-march-6th-2f9344688277" target="_blank" rel="external">io.js Week of March 6th</a>，作者：<a href="https://medium.com/@iojs" target="_blank" rel="external">@iojs</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Buffer.indexOf()、Tessel 2 以及更多消息。</p>
+<h1 id="io-js_1-5-0_釋出">io.js 1.5.0 釋出</h1><p><a href="https://github.com/rvagg" target="_blank" re]]>
+    </summary>
+    
+      <category term="iojs 週報" scheme="http://tw.iojs.org/categories/iojs-%E9%80%B1%E5%A0%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[io.js 週報 2015.02.27]]></title>
+    <link href="http://tw.iojs.org/2015/03/07/io-js-week-of-february-27th/"/>
+    <id>http://tw.iojs.org/2015/03/07/io-js-week-of-february-27th/</id>
+    <published>2015-03-07T23:07:40.000Z</published>
+    <updated>2015-05-13T22:57:58.680Z</updated>
+    <content type="html"><![CDATA[<p><em>注意：版本 <strong>1.4.0</strong> 已經編譯完成並加上標籤但是尚未釋出。在過程中一個 libuv 的臭蟲被發現所以這次的釋出將被棄置，我們將會提升版本號到 1.4.1 以避免造成混淆。</em></p>
+<h2 id="主要更動">主要更動</h2><ul>
+<li><strong>process</strong> / <strong>promises</strong>：每當有 <code>Promise</code> 被回絕而且沒有在 <code>Promise</code> 上附加錯誤處理程式，現在 <code>process</code> 會在該輪的事件迴圈內發出一個 <code>&#39;unhandledRejection&#39;</code> 事件。而每當 <code>Promise</code> 被回絕而且它有附加錯誤處理程式時，現在它會在下一輪事件迴圈發出一個 <code>&#39;rejectionHandled&#39;</code> 事件。  <a href="https://github.com/iojs/io.js/pull/758" target="_blank" rel="external">#758</a> (Petka Antonov)</li>
+<li><strong>streams</strong>：現在可以使用正規的 stream 作為 <code>tls.connect()</code> 的底層 socket <a href="https://github.com/iojs/io.js/pull/926" target="_blank" rel="external">#926</a> (Fedor Indutny)</li>
+<li><strong>http</strong>：當 <code>http.ClientRequest</code> 被客戶端棄置的時候，會發出一個新的 <code>&#39;abort&#39;</code> 事件。 <a href="https://github.com/iojs/io.js/pull/945" target="_blank" rel="external">#945</a> (Evan Lucas)</li>
+<li><strong>V8</strong>：升級 V8 版本到 4.1.0.21。包含一個禁止訪問的修補，當禁止之後被解除時應該可以得到細節的資訊。有一個破壞性的 ABI 變更不會在這次的升級之中，可能會在 io.js 合入 V8 4.2 版本的時候加上去。參閱 <a href="https://github.com/iojs/io.js/pull/952" target="_blank" rel="external">#952</a> 的討論。</li>
+<li><strong>npm</strong>：升級 npm 版本到 2.6.0。包含支援新註冊系統和為了 <code>npm@3</code> 準備的功能。參閱 <a href="https://github.com/npm/npm/blob/master/CHANGELOG.md#v260-2015-02-12" target="_blank" rel="external">npm CHANGELOG.md</a> 以了解細節。總結：<ul>
+<li><a href="https://github.com/npm/npm/issues/5068" target="_blank" rel="external">#5068</a> 增加新的登出指令，它對基於 bearer 和 basic 認證的客戶端有幫助。</li>
+<li><a href="https://github.com/npm/npm/issues/6565" target="_blank" rel="external">#6565</a> 提醒 <code>peerDependency</code> 的行為改變了並增加了說明文件。</li>
+<li><a href="https://github.com/npm/npm/issues/7171" target="_blank" rel="external">#7171</a> 提醒 <code>package.json</code> 中的 <code>engineStrict</code> 屬性將會在下一個 npm 主版號移除 (即將到來！)</li>
+</ul>
+</li>
+<li><strong>libuv</strong>：升級版本到 1.4.2。參閱 <a href="https://github.com/libuv/libuv/blob/v1.x/ChangeLog" target="_blank" rel="external">libuv 變更日誌</a> 以了解修補的細節。</li>
+</ul>
+<h1 id="ARM_提供_io-js_在_ARMv8_上的支援">ARM 提供 io.js 在 ARMv8 上的支援</h1><p>ARM 已經聯繫 io.js 建置工作小組的領導者 Rod Vagg，提供他們對 io.js 專案的支援。 ARM 和他們的硬體合作夥伴已經上了軌道讓 ARMv8 成為可運作的伺服器平台，伺服器端 JavaScript 靈活的特性也讓他們完美契合地運行在新的 ARM 上面。</p>
+<p>因為 ARMv8 已經被行動設備製造商採用，新版本的 V8 已經有很好的支援。因為 V8 在 Android 中的角色很關鍵，io.js 非常適合去追蹤它的支援情況，更甚至貢獻給 v8 會讓我們與 V8 團隊有新的關係。</p>
+<p>從 io.js 專案開始的時候，Rod 一直倡導 ARM 對於 io.js、物聯網、愛好者和伺服器使用的角色。我們已經在每次釋出對裝置做 ARMv6 的建置，例如：Raspberry Pi。並且對許多受歡迎的裝置做 ARMv7 的建置 (包括基於 ARM 的雲端平台 Online Labs，也對 io.js 提供幫助)。ARMv8 邏輯繼承這些，但也有令人興奮的潛力來建置伺服器端應用程式，特別是它給予新的 64-bit 支援。</p>
+<p>建置團隊被獲准使用 Linaro ARMv8 伺服器叢集，正在進行跟 io.js CI 平台的整合，這最終應該能導向正規的 ARMv8 二進位檔釋出。</p>
+<h1 id="社群更新">社群更新</h1><ul>
+<li><a href="https://github.com/iojs/io.js/issues/978" target="_blank" rel="external"><strong>和解提案</strong></a>：io.js 著手開始進行對於 Node.js 基金會的和解草案。目前還是初期草案階段，因此來自社群的意見是非常重要的，請大家踴躍反應。</li>
+<li><strong>New internal C++ Streams API</strong>：一個全新的 [C++ Streams API] 在這週增加到 io.js 之中，允許你可以將 TLS stream 包裝成另一個 TLS stream。</li>
+<li><strong>io.js 路徑圖</strong>：<a href="https://github.com/iojs/io.js/blob/v1.x/ROADMAP.md" target="_blank" rel="external">路徑圖</a> 是對 io.js 未來的規劃。它描述關於穩定性策略的規劃以及列出 io.js 的當務之急。</li>
+<li><strong>路徑圖的投影片已經完成等待翻譯</strong>：一系列之於 io.js 路徑圖的投影片已經<a href="https://github.com/iojs/roadmap/issues/18" target="_blank" rel="external">完成可以進行翻譯</a>。你覺得你可以向周遭的群體做簡報嗎？留下你的意見，我們會與你協作幫你預備好簡報！</li>
+<li><strong>Microsoft io.js How-To for Azure Websites</strong>: 微軟 發佈一篇關於他們 Azure 平台的<a href="http://azure.microsoft.com/en-us/documentation/articles/web-sites-nodejs-iojs/" target="_blank" rel="external">入門教學</a>，描述如何在 Azure 上使用 io.js。</li>
+<li><strong>Floobits moves to io.js</strong>: 配對編程軟體 Floobits <a href="https://news.floobits.com/2015/02/23/on-moving-to-io.js/" target="_blank" rel="external">將他們的平台轉移到 io.js</a>，因為對於 Node 過於緩慢的釋出感到挫折，對於可以開始使用 ES6 的新功能而又不需要增加 <code>--harmony</code> 的參數，他們也覺得從 0.10.0 到 0.12.0 的改動並不是非常明顯。</li>
+<li><strong>Anand Mani Sankar’s <em>Node.js vs io.js: Why the fork?!?</em></strong>: Anand 寫了一篇很不錯也相當客觀的 <a href="http://anandmanisankar.com/posts/nodejs-iojs-why-the-fork/#.VO82hE60PVw.twitter" target="_blank" rel="external">io.js 近期歷史的文章</a>，也提及我們希望藉由 io.js 實現什麼。可以幫助哪些沒有參與到社群之中的人可以瞭解目前的狀況。</li>
+<li><strong>iojs-jp - New io.js Japanese Blog</strong>: iojs-jp 社群建立了<a href="http://blog.iojs.jp/" target="_blank" rel="external">本地化的部落格</a>，用當地的語言來傳遞  io.js 的消息。如果你感興趣，快去看看吧！</li>
+<li><strong>iojs-cn - New io.js Chinese Blog</strong>: 類似於 iojs-jp 社群，iojs-cn 社群也成立了<a href="http://cn.iojs.org/" target="_blank" rel="external">本地化的部落格</a>，用中文來發佈關於 io.js 的文章。如果你對於 iojs-cn 或 iojs 中文新聞感到興趣的話，請不要錯過！</li>
+<li><strong><a href="https://www.youtube.com/watch?v=etI_UD4wXlo" target="_blank" rel="external">檢閱路徑圖投影片</a></strong> - 在釋出前對 io.js 路徑圖簡報的檢閱，確保它有符合專案的目標。</li>
+</ul>
+<h1 id="對_io-js_的支援增加">對 io.js 的支援增加</h1><ul>
+<li><strong><a href="http://wallabyjs.com/" target="_blank" rel="external">Wallby.js</a></strong>，一個 JavaScript 的即時測試函式庫，釋出了 1.0 版本並<a href="http://dm.gl/2015/02/23/wallaby-version-one/" target="_blank" rel="external">增加對 io.js 的支援</a>！</li>
+<li><strong><a href="https://github.com/tmpvar/jsdom" target="_blank" rel="external">jsdom</a></strong>，針對 WHATWG DOM 和 HTML 標準的實作，剛釋出了 <a href="https://github.com/tmpvar/jsdom/blob/master/Changelog.md#400" target="_blank" rel="external">4.0.0 版本</a> 並且加入了 io.js 的依賴需求。</li>
+<li><strong><a href="https://github.com/mmalecki/give" target="_blank" rel="external">give</a></strong> 的作者<a href="https://twitter.com/maciejmalecki/status/569629100215816192" target="_blank" rel="external">發了一則推文</a> 宣布新版的 give 將會增加對 io.js 的支援。Give 是基於 git 的 node.js/io.js 版本控制器。</li>
+<li><strong>Firebase Realtime Client</strong>，Firebase 官方的 web/node.js 客戶端，<a href="https://twitter.com/FirebaseRelease/status/570000737343647744" target="_blank" rel="external">宣布</a> 他們將於 <a href="https://www.firebase.com/docs/web/changelog.html#section-realtime-client" target="_blank" rel="external">2.2.1</a> 開始支援 io.js。</li>
+<li><strong>Semaphore</strong>，提供持續整合服務商，在 <a href="https://semaphoreapp.com/blog/2015/02/17/platform-update-on-february-24th.html?utm_source=twitter&amp;utm_medium=social&amp;utm_content=platform_update_launch&amp;utm_campaign=platformupdate" target="_blank" rel="external">2015/2/24 平台更新</a>中<a href="https://twitter.com/semaphoreapp/status/570987355005431809" target="_blank" rel="external">宣布</a>將會支援 io.js。</li>
+</ul>
+<p>原文：<a href="https://medium.com/node-js-javascript/io-js-week-of-february-17th-9422a589302a" target="_blank" rel="external">io.js Week of February 27th</a>，作者：<a href="https://medium.com/@iojs" target="_blank" rel="external">@iojs</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><em>注意：版本 <strong>1.4.0</strong> 已經編譯完成並加上標籤但是尚未釋出。在過程中一個 libuv 的臭蟲被發現所以這次的釋出將被棄置，我們將會提升版本號到 1.4.1 以避免造成混淆。</em></p>
+<h2 id="主要更動">主要更動</]]>
+    </summary>
+    
+      <category term="iojs 週報" scheme="http://tw.iojs.org/categories/iojs-%E9%80%B1%E5%A0%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[npm 週報 2015-03-04]]></title>
+    <link href="http://tw.iojs.org/2015/03/04/npm-weekly-7/"/>
+    <id>http://tw.iojs.org/2015/03/04/npm-weekly-7/</id>
+    <published>2015-03-04T12:00:00.000Z</published>
+    <updated>2015-05-13T22:57:58.680Z</updated>
+    <content type="html"><![CDATA[<p>本週的 npm 最新消息，同樣也<a href="https://www.npmjs.com/npm-weekly" target="_blank" rel="external">可以透過 email 訂閱</a>。</p>
+<h1 id="CLI_的新功能">CLI 的新功能</h1><p>npm@2.6.1 無意中修復了許多關於 <code>npm update -g</code> 的問題，只是簡單地將 <code>--dpeth=0</code> 作為 <code>npm outdated</code> 的預設值。</p>
+<h1 id="參閱最新的路線圖">參閱最新的路線圖</h1><p>隨著 npm@3 的臨近，CLI 團隊將即將到來的版本以及未來規劃列在<a href="https://github.com/npm/npm/wiki/Roadmap" target="_blank" rel="external">路線圖</a>之中，將會按照其優先順序來更新，如果你想知道詳細內容的話，可以前往參閱。</p>
+<h1 id="使用_Jquery_Plugins">使用 Jquery Plugins</h1><p>上週我們提到如何發佈你的 jQuery plugins 到 npm，這次我們將展示如何<a href="http://blog.npmjs.org/post/112064849860/using-jquery-plugins-with-npm" target="_blank" rel="external">使用</a>別人發佈的 plugins，即使它們不是 CommonJS 模組。</p>
+<h1 id="我們喜歡的模組">我們喜歡的模組</h1><p><a href="https://www.npmjs.com/package/nock" target="_blank" rel="external">nock</a> 是一個可以幫助攔截 HTTP 流量的工具，它提供非常簡潔的 API 可以模擬一或多個  requests 然後回傳自訂的 headers，狀態碼或回應信息等。它同時也支援<a href="https://www.npmjs.com/package/nock#chaining" target="_blank" rel="external">串連</a>多個呼叫，模擬<a href="https://www.npmjs.com/package/nock#delay-the-response" target="_blank" rel="external">延遲</a>，以及<a href="https://www.npmjs.com/package/nock#enabledisable-real-http-request" target="_blank" rel="external">關閉網路流量</a>。npm 團隊運用 nock 在許多我們的程式碼之中來提升測試的速度並隔離測試。</p>
+<p>原文：<a href="http://blog.npmjs.org/post/112610795275/npm-weekly-7" target="_blank" rel="external">npm weekly, #7</a>，作者：<a href="http://blog.npmjs.org/" target="_blank" rel="external">@npm</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>本週的 npm 最新消息，同樣也<a href="https://www.npmjs.com/npm-weekly" target="_blank" rel="external">可以透過 email 訂閱</a>。</p>
+<h1 id="CLI_的新功能">CLI 的新]]>
+    </summary>
+    
+      <category term="npm 週報" scheme="http://tw.iojs.org/categories/npm-%E9%80%B1%E5%A0%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[npm 週報 2015-02-24]]></title>
+    <link href="http://tw.iojs.org/2015/02/24/npm-weekly-6/"/>
+    <id>http://tw.iojs.org/2015/02/24/npm-weekly-6/</id>
+    <published>2015-02-24T12:00:00.000Z</published>
+    <updated>2015-05-13T22:57:58.680Z</updated>
+    <content type="html"><![CDATA[<p>我們決定將改變排程，將週報改到星期二，這也是為什麼你現在會看到這篇的原因。不過你仍然可以選擇<a href="https://www.npmjs.com/npm-weekly" target="_blank" rel="external">直接收到週報</a>的方式。</p>
+<h2 id="CLI_的新功能">CLI 的新功能</h2><p>npm 的最新版號是 2.6.0。在這版本中加入一個新的指令 <code>npm logout</code>，在以 auth tokens 取代帳號密碼這種更好認證方法的路上，又向前邁進了一步。</p>
+<p>當你登入到支援 token-based 認證方式的套件庫，這個指令將告訴伺服器終止 token 的 session，所有裝置上的 token 都將無效，而不單只有目前使用的裝置。</p>
+<h2 id="npm@3_將會有什麼改變">npm@3 將會有什麼改變</h2><p><img src="http://media.tumblr.com/a9bc8311e63c86db3d2debd6dc7eea72/tumblr_inline_nkag6xyiwC1t68bpr.png" alt=""></p>
+<p>在上週的週報中有提到在 npm@3 將會有扁平化的 node_modules 目錄結構。這個星期我們將展示它會對於 npm 其他的工具的影響。舉個例子，當你安裝 event-emitter。如果你執行 ls node_modules，你將會看到所有的依存套件處在同一層中，但是當你執行 npm ls 的指令，你會看到依存關係樹。這是因為 npm 工具將會知道依存套件之間真正的關聯。</p>
+<h2 id="每月達到十億次的下載量">每月達到十億次的下載量</h2><p><img src="http://media.tumblr.com/cb372793ebfbc90e243c8be357422188/tumblr_inline_nkag7ewgMe1t68bpr.png" alt=""></p>
+<p>npm 跨過了一個<a href="https://twitter.com/seldo/status/566403297368485888" target="_blank" rel="external">重大的里程碑</a>，這是我們的「月下載次數」首次超過了十億次的下載量。我們有了第一個超過十億個套件被下載的 30-天 視窗 (見圖)。這是相當大的套件數量。</p>
+<h2 id="jQuery_開發者，歡迎！">jQuery 開發者，歡迎！</h2><p>如果你沒注意到這個消息，jQuery 擴充套件庫目前只提供讀取的功能，他們建議開發者們將擴充發佈到 npm 上。我們撰寫了提供開發者可以輕鬆轉換，以 <a href="http://blog.npmjs.org/post/111475741445/publishing-your-jquery-plugin-to-npm-the-quick" target="_blank" rel="external">Publishing your jQuery plugin to npm, the quick and dirty way</a> 這篇文章作為開頭。</p>
+<p>原文：<a href="http://blog.npmjs.org/post/111968476155/npm-weekly-6" target="_blank" rel="external">npm weekly, #6</a>，作者：<a href="http://blog.npmjs.org/" target="_blank" rel="external">@npm</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>我們決定將改變排程，將週報改到星期二，這也是為什麼你現在會看到這篇的原因。不過你仍然可以選擇<a href="https://www.npmjs.com/npm-weekly" target="_blank" rel="external">直接收到週報</a>的方式。</p]]>
+    </summary>
+    
+      <category term="npm 週報" scheme="http://tw.iojs.org/categories/npm-%E9%80%B1%E5%A0%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[io.js 週報 2015.02.20]]></title>
+    <link href="http://tw.iojs.org/2015/02/22/io-js-weekly-2015-02-20/"/>
+    <id>http://tw.iojs.org/2015/02/22/io-js-weekly-2015-02-20/</id>
+    <published>2015-02-22T12:46:24.000Z</published>
+    <updated>2015-05-13T22:57:58.680Z</updated>
+    <content type="html"><![CDATA[<h2 id="io-js_釋出_1-3-0">io.js 釋出 1.3.0</h2><p>值得注意的改變包括：</p>
+<ul>
+<li><strong>url</strong>: <code>url.resolve(&#39;/path/to/file&#39;, &#39;.&#39;)</code> 現在會回傳包括尾端斜線的 <code>/path/to/</code>，<code>url.resolve(&#39;/&#39;, &#39;.&#39;)</code> 則回傳 <code>/</code> <a href="https://github.com/iojs/io.js/pull/278" target="_blank" rel="external">#278</a> (Amir Saboury)</li>
+<li><strong>tls</strong>: <code>tls</code> 和 <code>https</code> 預設加密套件改用 PFS (<a href="http://en.wikipedia.org/wiki/Forward_secrecy" target="_blank" rel="external">Perfect Forward Secrecy</a>，一種兼容於主流瀏覽器加密套件) 。此外，不安全的 RC4 加密已經被移除。如果你真的需要 RC4，請指定自己的加密套件。 <a href="https://github.com/iojs/io.js/pull/826" target="_blank" rel="external">#826</a> (Roman Reiss)</li>
+</ul>
+<a id="more"></a>
+<h2 id="社群中的重要事件">社群中的重要事件</h2><ul>
+<li><strong>Node 管理</strong> - <a href="https://twitter.com/williamjohnbert" target="_blank" rel="external">William Bert</a> 建立 <a href="http://nodegovernance.io/" target="_blank" rel="external">http://nodegovernance.io/</a> 來警告 Joyent 的執行長 Scott Hammond，社群希望 Node 基金會的技術委員會能基於 io.js 的開放式治理模式。社群的回應真是 <em>太棒了</em>！</li>
+<li><strong>Node.js 和 io.js 效能提高</strong> - Raygun.io 最近對 Node.js 和 io.js 兩者都做了效能測試，並且都藉由釋出提高了效能！<a href="https://raygun.io/blog/2015/02/node-js-performance-node-js-vs-io-js/" target="_blank" rel="external">閱讀整篇文章</a>.</li>
+<li><strong>LTTng 基礎</strong> - 使用者 jgalar 在 asciinema 上建立使用 io.js 的 <a href="https://asciinema.org/a/16785" target="_blank" rel="external">LTTing 基礎</a></li>
+<li><strong>io.js 規劃路線投影片</strong> - 展示 io.js 當前規劃路線的投影片。</li>
+</ul>
+<h3 id="已經支援_io-js_的">已經支援 io.js 的</h3><ul>
+<li><a href="https://travis-ci.org/" target="_blank" rel="external">TravisCI</a> 新增 io.js。每週更新張貼的最後一天，Hiro Asari (あさり) <a href="https://twitter.com/hiro_asari/status/566268486012633088" target="_blank" rel="external">推了一則 tweet</a> 說 10% 的 Node 專案已經運行 io.js。</li>
+<li>@thlorenz 更新 <a href="https://github.com/thlorenz/nad" target="_blank" rel="external">nad</a>，Node Addon 開發者，以 <a href="https://twitter.com/thlorenz/status/566328088121081856" target="_blank" rel="external">支援 io.js</a>。</li>
+<li><a href="https://github.com/catberry/catberry" target="_blank" rel="external">Catberry.js</a> 增加 io.js 的支援。</li>
+<li>mongodb 的官方 node 模組在 <a href="https://github.com/mongodb/node-mongodb-native/blob/2.0/HISTORY.md" target="_blank" rel="external">v. 2.0.16 2015-02-16</a> 支援 io.js。</li>
+<li><a href="http://www.thenativeweb.io/" target="_blank" rel="external">The Native Web</a> 現在擁有 <a href="https://registry.hub.docker.com/u/thenativeweb/iojs/" target="_blank" rel="external">io.js Docker 容器</a></li>
+<li><a href="https://okturtles.com/" target="_blank" rel="external">okTurtles</a> 的 <a href="https://github.com/okTurtles/dnschain" target="_blank" rel="external">DNSChain</a> 增加對 io.js 的支援。</li>
+<li><a href="http://www.actionherojs.com/" target="_blank" rel="external">actionHero</a> 的 <a href="https://github.com/neilstuartcraig/TDPAHACLPlugin" target="_blank" rel="external">TDPAHACLPlugin</a> 和 <a href="https://github.com/neilstuartcraig/TDPAHAuthPlugin" target="_blank" rel="external">TDPAHAuthPlugin</a> 現在支援 io.js。</li>
+<li><a href="https://npmjs.org/package/node-sass" target="_blank" rel="external">node-sass</a> 在 node-sass <a href="https://github.com/sass/node-sass/issues/655" target="_blank" rel="external">v. 2.0.1</a> 增加對 io.js 1.2 的支援。</li>
+<li><a href="https://www.totaljs.com/" target="_blank" rel="external">total.js</a> 在 <a href="https://github.com/totaljs/framework/releases/tag/v1.7.1" target="_blank" rel="external">v. 1.7.1</a> 增加對 io.js 的支援。</li>
+<li><a href="https://www.clever-cloud.com/" target="_blank" rel="external">Clever Cloud</a> 已經增加 <a href="https://www.clever-cloud.com/blog/features/2015/01/23/introducing-io.js/" target="_blank" rel="external">io.js 的支援</a></li>
+</ul>
+<h2 id="io-js_工作小組會議">io.js 工作小組會議</h2><ul>
+<li>io.js 追蹤工作小組會議 - 2015 二月 19： <a href="https://www.youtube.com/watch?v=wvBVjg8jkv0" target="_blank" rel="external">YouTube</a> - <a href="https://docs.google.com/document/d/1_ApOMt03xHVkaGpTEPMDIrtkjXOzg3Hh4ZcyfhvMHx4/edit" target="_blank" rel="external">Minutes</a></li>
+<li>io.js 建置工作小組會議 - 2015 二月 19： <a href="https://www.youtube.com/watch?v=OKQi3pTF7fs" target="_blank" rel="external">YouTube</a> - <a href="https://soundcloud.com/iojs/iojs-build-wg-meeting-2015-02-19" target="_blank" rel="external">SoundCloud</a> - <a href="https://docs.google.com/document/d/1vRhsYBs4Hw6vRu55h5eWTwDzS1NctxdTvMMEnCbDs14/edit" target="_blank" rel="external">Minutes</a></li>
+<li>io.js 技術委員會會議 - 2015 二月 18： <a href="https://www.youtube.com/watch?v=jeBPYLJ2_Yc" target="_blank" rel="external">YouTube</a> - <a href="https://soundcloud.com/iojs/iojs-tc-meeting-meeting-2015-02-18" target="_blank" rel="external">SoundCloud</a> - <a href="https://docs.google.com/document/d/1JnujRu6Rfnp6wvbvwCfxXnsjLySunQ_yah91pkvSFdQ/edit" target="_blank" rel="external">Minutes</a></li>
+<li>io.js 網站工作小組會議 - 2015 二月 16： <a href="https://www.youtube.com/watch?v=UKDKhFV61ZA" target="_blank" rel="external">YouTube</a> - <a href="https://soundcloud.com/iojs/iojs-website-wg-meeting-2015-02-16" target="_blank" rel="external">SoundCloud</a> - <a href="https://docs.google.com/document/d/1R8JmOoyr64tt-QOj27bD19ZOWg63CujW7GeaAHIIkUs/edit" target="_blank" rel="external">Minutes</a></li>
+</ul>
+<p>原文：<a href="https://medium.com/node-js-javascript/io-js-week-of-february-20th-2015-48486615980" target="_blank" rel="external">io.js Week of February 20th 2015</a>，作者：<a href="https://medium.com/@iojs" target="_blank" rel="external">@iojs</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="io-js_釋出_1-3-0">io.js 釋出 1.3.0</h2><p>值得注意的改變包括：</p>
+<ul>
+<li><strong>url</strong>: <code>url.resolve(&#39;/path/to/file&#39;, &#39;.&#39;)</code> 現在會回傳包括尾端斜線的 <code>/path/to/</code>，<code>url.resolve(&#39;/&#39;, &#39;.&#39;)</code> 則回傳 <code>/</code> <a href="https://github.com/iojs/io.js/pull/278">#278</a> (Amir Saboury)</li>
+<li><strong>tls</strong>: <code>tls</code> 和 <code>https</code> 預設加密套件改用 PFS (<a href="http://en.wikipedia.org/wiki/Forward_secrecy">Perfect Forward Secrecy</a>，一種兼容於主流瀏覽器加密套件) 。此外，不安全的 RC4 加密已經被移除。如果你真的需要 RC4，請指定自己的加密套件。 <a href="https://github.com/iojs/io.js/pull/826">#826</a> (Roman Reiss)</li>
+</ul>]]>
+    
+    </summary>
+    
+      <category term="iojs 週報" scheme="http://tw.iojs.org/categories/iojs-%E9%80%B1%E5%A0%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[npm 週報 2015-02-13]]></title>
+    <link href="http://tw.iojs.org/2015/02/15/npm-weekly-5/"/>
+    <id>http://tw.iojs.org/2015/02/15/npm-weekly-5/</id>
+    <published>2015-02-15T12:00:00.000Z</published>
+    <updated>2015-05-13T22:57:58.680Z</updated>
+    <content type="html"><![CDATA[<p>你希望可以<a href="https://www.npmjs.com/npm-weekly" target="_blank" rel="external">直接收到</a> npm 最新更新的消息嗎？</p>
+<h3 id="CLI_有什麼更新">CLI 有什麼更新</h3><p><img src="http://media.tumblr.com/5702701b335f0738fc9497aec482cb42/tumblr_inline_njqav2FNuI1t68bpr.png" alt=""></p>
+<p>你或許有注意到從 npm@2.6.0 之後出現的警告訊息。</p>
+<p>我們將會在 npm@3 的時候移除 <code>engineStrict</code> 這個 package.json 設定，所以你在 npm@2.6.0 之後就會看到關於這個變更的警告訊息。你仍然可以在你的 .npmrc 中設定 engine，因為在套件中設定 engine 的限制從來就沒有正常的運行，所以我們決定把它移除。</p>
+<p>我們也會在 npm@3 改變 peerDependencies 的行為。我們將不再自動下載 peer dependency，取而代之的是，顯示警告訊息提醒你 peer dependency 沒有被安裝。所以你必須要自行處理 peerDependencies 的衝突，從長遠來看，這個改變將會減少套件相依性造成的棘手問題。</p>
+<h3 id="npm@3_將會有什麼新改變">npm@3 將會有什麼新改變</h3><p>npm@3 之後，你的 node_modules 目錄將更為扁平，所有的依賴套件以及它們各自依賴的套件 (以及更上層的依賴套件) 都將置於第一層。只有他們發生衝突的時候，才會移到下一層目錄。此一改變將大大改善 Windows 使用者。</p>
+<h3 id="如何使用_npm">如何使用 npm</h3><p><img src="http://media.tumblr.com/b3f53c6a6a8c7d5862a95fda7a94f7de/tumblr_inline_njqazvJorm1t68bpr.png" alt=""></p>
+<p>npm 有了一個新的互動式教學 - <a href="https://www.npmjs.com/package/how-to-npm" target="_blank" rel="external">how-to-npm</a>。學習如何發佈並更新套件到 npm，以及其他維護的工作。不需要擔心發佈到公用的套件庫之中，它只會上傳到一個運行在你電腦上假的套件庫。</p>
+<h3 id="Node_基金會">Node 基金會</h3><p>Joyent 在這星期宣布他們將會籌組 Node.js 基金會。這對於支持 JavaScript 社群，吸引更多企業投資邁向了一大步。這一切尚處於早期階段，但是我們期待這個舉動對於 Node.js 專案以及 JavsScript 社群普及的影響。</p>
+<p>原文：<a href="http://blog.npmjs.org/post/110924823920/npm-weekly-5" target="_blank" rel="external">npm Weekly, #5</a>，作者：<a href="http://blog.npmjs.org/" target="_blank" rel="external">@npm</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>你希望可以<a href="https://www.npmjs.com/npm-weekly" target="_blank" rel="external">直接收到</a> npm 最新更新的消息嗎？</p>
+<h3 id="CLI_有什麼更新">CLI 有什麼更新</h]]>
+    </summary>
+    
+      <category term="npm 週報" scheme="http://tw.iojs.org/categories/npm-%E9%80%B1%E5%A0%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[io.js 週報 - 2015.02.13]]></title>
+    <link href="http://tw.iojs.org/2015/02/14/weekly/"/>
+    <id>http://tw.iojs.org/2015/02/14/weekly/</id>
+    <published>2015-02-14T02:00:00.000Z</published>
+    <updated>2015-05-13T22:57:58.680Z</updated>
+    <content type="html"><![CDATA[<p>29 個語系本地化，1.2.0 釋出 .. 等等。</p>
+<h2 id="io-js_已經支援…">io.js 已經支援…</h2><ul>
+<li><a href="http://blog.postmarkapp.com/post/110829734198/its-official-were-getting-cozy-with-node-js" target="_blank" rel="external">Postmark</a></li>
+<li><a href="https://github.com/voodootikigod/node-serialport/issues/439" target="_blank" rel="external">node-serialport</a></li>
+<li><a href="http://azure.microsoft.com/en-us/documentation/articles/web-sites-nodejs-iojs/" target="_blank" rel="external">Microsoft Azure</a></li>
+</ul>
+<h2 id="io-js_在_Github_的_star_數量已經突破_10,000">io.js 在 Github 的 star 數量已經突破 10,000</h2><p>io.js 於 2/13 在 Github 上已經到達 10,000 stars 的目標。若非 JavaScript 背後這個令人驚豔的社群支持，我們是不可能能夠有如此的成績，感謝大家！</p>
+<a id="more"></a>
+<h2 id="io-js_1-2-0_釋出">io.js 1.2.0 釋出</h2><ul>
+<li><strong>stream:</strong> <a href="https://github.com/iojs/readable-stream/issues/102" target="_blank" rel="external">簡化的 stream 建構子</a></li>
+<li><strong>dns:</strong> <a href="https://github.com/iojs/io.js/pull/744" target="_blank" rel="external">lookup() 增加’all’的設定，預設值為 false。當此打開此選項之後，呼叫該方法將會回傳一個陣列包含所有該主機名稱的所有位址</a>。</li>
+<li><strong>assert:</strong> deepEqual() 移除 prototype 屬性比對並新增 deepStrictEqual() 方法，功能同 deepEqual()，但在比對 primitives 時使用嚴格相等檢查。</li>
+<li><strong>tracing:</strong> <a href="https://github.com/iojs/io.js/pull/702" target="_blank" rel="external">當編譯時使用 —with-lttng 會增加 LTTng (Linux Trace Toolkit Next Generation) 的功能</a>。</li>
+<li><strong>docs:</strong> 大量的文件更新以及新增關於錯誤的文件，包含 JavaScript 錯誤、V8 和 io.js 相關錯誤的細節。</li>
+<li><strong>npm</strong> 升級到 2.5.1</li>
+<li><strong>libuv</strong> 升級到 1.4.0，請參閱<a href="https://github.com/libuv/libuv/blob/v1.x/ChangeLog" target="_blank" rel="external">更新紀錄</a>。</li>
+<li>增加新的協力者: Aleksey Smolenchuk (<a href="https://github.com/lxe" target="_blank" rel="external">@lxe</a>) 和 Shigeki Ohtsu (<a href="https://github.com/shigeki" target="_blank" rel="external">@shigeki</a>)。</li>
+</ul>
+<h2 id="對國際社群敞開大門">對國際社群敞開大門</h2><p>請參閱 Medium 上的<a href="https://medium.com/@mikeal/how-io-js-built-a-146-person-27-language-localization-effort-in-one-day-65e5b1c49a62" target="_blank" rel="external">原文</a>。</p>
+<ul>
+<li>把感興趣的開發者加入到原屬語言的團隊。</li>
+<li>團隊註冊自己的推特帳號以及其他相關的社交媒體。</li>
+<li>團隊訂立自己的協作方式，成為“社群組織者”，而非單單“翻譯者”。</li>
+</ul>
+<h3 id="本地化的情況">本地化的情況</h3><ul>
+<li>第一天就有 146 位成員屬名願意協助本地化的工作 (目前已經超過 160 位)。</li>
+<li>在第一天就有 27 個語系的社群成立 (目前已經到達 29 個)。</li>
+</ul>
+<h3 id="本地化社群">本地化社群</h3><ul>
+<li><a href="https://github.com/iojs/iojs-bn" target="_blank" rel="external">iojs-bn</a> 孟加拉社群</li>
+<li><a href="https://github.com/iojs/iojs-cn" target="_blank" rel="external">iojs-cn</a> 中國社群</li>
+<li><a href="https://github.com/iojs/iojs-cs" target="_blank" rel="external">iojs-cs</a> 捷克社群</li>
+<li><a href="https://github.com/iojs/iojs-da" target="_blank" rel="external">iojs-da</a> 丹麥社群</li>
+<li><a href="https://github.com/iojs/iojs-de" target="_blank" rel="external">iojs-de</a> 德國社群</li>
+<li><a href="https://github.com/iojs/iojs-el" target="_blank" rel="external">iojs-el</a> 希臘社群</li>
+<li><a href="https://github.com/iojs/iojs-es" target="_blank" rel="external">iojs-es</a> 西班牙社群</li>
+<li><a href="https://github.com/iojs/iojs-fa" target="_blank" rel="external">iojs-fa</a> 伊朗社群</li>
+<li><a href="https://github.com/iojs/iojs-fi" target="_blank" rel="external">iojs-fi</a> 芬蘭社群</li>
+<li><a href="https://github.com/iojs/iojs-fr" target="_blank" rel="external">iojs-fr</a> 法國社群</li>
+<li><a href="https://github.com/iojs/iojs-he" target="_blank" rel="external">iojs-he</a> 希伯來社群</li>
+<li><a href="https://github.com/iojs/iojs-hi" target="_blank" rel="external">iojs-hi</a> 北印度社群</li>
+<li><a href="https://github.com/iojs/iojs-hu" target="_blank" rel="external">iojs-hu</a> 匈牙利社群</li>
+<li><a href="https://github.com/iojs/iojs-id" target="_blank" rel="external">iojs-id</a> 印尼社群</li>
+<li><a href="https://github.com/iojs/iojs-it" target="_blank" rel="external">iojs-it</a> 義大利社群</li>
+<li><a href="https://github.com/iojs/iojs-ja" target="_blank" rel="external">iojs-ja</a> 日本社群</li>
+<li><a href="https://github.com/iojs/iojs-ka" target="_blank" rel="external">iojs-ka</a> 喬治亞社群</li>
+<li><a href="https://github.com/iojs/iojs-kr" target="_blank" rel="external">iojs-kr</a> 韓國社群</li>
+<li><a href="https://github.com/iojs/iojs-mk" target="_blank" rel="external">iojs-mk</a> 馬其頓社群</li>
+<li><a href="https://github.com/iojs/iojs-nl" target="_blank" rel="external">iojs-nl</a> 荷蘭社群</li>
+<li><a href="https://github.com/iojs/iojs-no" target="_blank" rel="external">iojs-no</a> 挪威社群</li>
+<li><a href="https://github.com/iojs/iojs-pl" target="_blank" rel="external">iojs-pl</a> 波蘭社群</li>
+<li><a href="https://github.com/iojs/iojs-pt" target="_blank" rel="external">iojs-pt</a> 葡萄牙社群</li>
+<li><a href="https://github.com/iojs/iojs-ro" target="_blank" rel="external">iojs-ro</a> 羅馬尼亞社群</li>
+<li><a href="https://github.com/iojs/iojs-ru" target="_blank" rel="external">iojs-ru</a> 俄羅斯社群</li>
+<li><a href="https://github.com/iojs/iojs-sv" target="_blank" rel="external">iojs-sv</a> 瑞典社群</li>
+<li><a href="https://github.com/iojs/iojs-tr" target="_blank" rel="external">iojs-tr</a> 土耳其社群</li>
+<li><a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">iojs-tw</a> 台灣社群</li>
+<li><a href="https://github.com/iojs/iojs-uk" target="_blank" rel="external">iojs-uk</a> 烏克蘭社群</li>
+</ul>
+<h2 id="io-js_以及_node-js">io.js 以及 node.js</h2><p>請參閱 Medium 上的<a href="https://medium.com/@iojs/io-js-and-a-node-js-foundation-4e14699fb7be" target="_blank" rel="external">原文</a></p>
+<ul>
+<li>Joyent 的 CEO，Scott Hammond 表明他希望把 io.js 帶回到 node.js 之中。</li>
+</ul>
+<h3 id="io-js_在短短的幾個月…">io.js 在短短的幾個月…</h3><ul>
+<li>已經擁有 23 位活躍的核心成員</li>
+<li>擁有數個工作小組</li>
+<li>擁有 29 個語系本地化小組</li>
+<li>比起 node.js 有更多的貢獻者</li>
+<li>在優秀社群的支援之下，以良好的節奏釋出高品質的軟體</li>
+</ul>
+<blockquote>
+<p>我們很希望把這一切拋在腦後，但是我們也無法輕易犧牲好不容易達到的成果，以及那些讓我們達到現今成果的理念及開放式管理。</p>
+</blockquote>
+<h3 id="未來">未來</h3><ul>
+<li>與 node.js 基金會的對話正持續進行中。</li>
+<li>一旦 node.js 基金會有了雛形，你們將會在 io.js 的 Github 中看到 io.js 是否應該加入的 issue，將會在公開的 TC 會議中討論並投票，一切都遵照我們已經建立起的管理方式。</li>
+</ul>
+<blockquote>
+<p>對社群來說，什麼都不會改變。</p>
+</blockquote>
+<h3 id="現在我們可以做什麼">現在我們可以做什麼</h3><ul>
+<li>貢獻並提交你的 pull requests 到 io.js。</li>
+<li>加入 <a href="https://github.com/iojs/website/issues/125" target="_blank" rel="external">27 個本地化團隊</a>之一。</li>
+<li>貢獻到 io.js 工作小組 (<a href="https://github.com/iojs/readable-stream" target="_blank" rel="external">streams</a>, <a href="https://github.com/iojs/website" target="_blank" rel="external">website</a>, <a href="https://github.com/iojs/website/labels/evangelism" target="_blank" rel="external">evangelism</a>, <a href="https://github.com/iojs/tracing-wg" target="_blank" rel="external">tracing</a>, <a href="https://github.com/iojs/build" target="_blank" rel="external">build</a>, <a href="https://github.com/iojs/roadmap" target="_blank" rel="external">roadmap</a>) 之中。</li>
+<li>持續採用 io.js 在你的應用程式之中。</li>
+</ul>
+<p>原文：<a href="https://medium.com/node-js-javascript/io-js-week-of-february-13th-2015-7846b94074a2" target="_blank" rel="external">io.js Week of February 13th 2015</a>，作者：<a href="https://medium.com/@iojs" target="_blank" rel="external">@iojs</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>29 個語系本地化，1.2.0 釋出 .. 等等。</p>
+<h2 id="io-js_已經支援…">io.js 已經支援…</h2><ul>
+<li><a href="http://blog.postmarkapp.com/post/110829734198/its-official-were-getting-cozy-with-node-js">Postmark</a></li>
+<li><a href="https://github.com/voodootikigod/node-serialport/issues/439">node-serialport</a></li>
+<li><a href="http://azure.microsoft.com/en-us/documentation/articles/web-sites-nodejs-iojs/">Microsoft Azure</a></li>
+</ul>
+<h2 id="io-js_在_Github_的_star_數量已經突破_10,000">io.js 在 Github 的 star 數量已經突破 10,000</h2><p>io.js 於 2/13 在 Github 上已經到達 10,000 stars 的目標。若非 JavaScript 背後這個令人驚豔的社群支持，我們是不可能能夠有如此的成績，感謝大家！</p>]]>
+    
+    </summary>
+    
+      <category term="iojs 週報" scheme="http://tw.iojs.org/categories/iojs-%E9%80%B1%E5%A0%B1/"/>
+    
+  </entry>
+  
+</feed>
